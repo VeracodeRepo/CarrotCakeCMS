@@ -1,0 +1,1345 @@
+------------------------------------------------------------------------
+r602 | ninianne98 | 2016-03-25 08:49:02 -0500 (Fri, 25 Mar 2016) | 2 lines
+
+tweak toolbar scroll position on refresh
+
+------------------------------------------------------------------------
+r601 | ninianne98 | 2016-03-20 14:07:47 -0500 (Sun, 20 Mar 2016) | 2 lines
+
+formating of templates
+
+------------------------------------------------------------------------
+r600 | ninianne98 | 2016-03-17 20:41:48 -0500 (Thu, 17 Mar 2016) | 2 lines
+
+formatting of Aqueous
+
+------------------------------------------------------------------------
+r599 | ninianne98 | 2016-03-17 20:41:41 -0500 (Thu, 17 Mar 2016) | 2 lines
+
+refactor GenerateSimplePassword
+
+------------------------------------------------------------------------
+r598 | ninianne98 | 2016-03-15 08:54:05 -0500 (Tue, 15 Mar 2016) | 2 lines
+
+added Aqueous Theme
+
+------------------------------------------------------------------------
+r597 | ninianne98 | 2016-03-12 16:49:43 -0600 (Sat, 12 Mar 2016) | 2 lines
+
+added BylineUser attribute to ISiteContent as fall through logic to use credit -> editor -> creator
+
+------------------------------------------------------------------------
+r596 | ninianne98 | 2016-03-07 08:25:39 -0600 (Mon, 07 Mar 2016) | 2 lines
+
+added template admin and public widget schema defs etc
+
+------------------------------------------------------------------------
+r595 | ninianne98 | 2016-03-06 12:48:33 -0600 (Sun, 06 Mar 2016) | 3 lines
+
+change htmlSource font size to 11pt
+codemaid format of html
+
+------------------------------------------------------------------------
+r594 | ninianne98 | 2016-03-02 08:15:47 -0600 (Wed, 02 Mar 2016) | 3 lines
+
+consistencty of parent file name and actual file name
+tweak of filename stuff for import of site content
+
+------------------------------------------------------------------------
+r593 | ninianne98 | 2016-02-22 07:46:57 -0600 (Mon, 22 Feb 2016) | 2 lines
+
+handle potential flipped namespace in xml
+
+------------------------------------------------------------------------
+r592 | ninianne98 | 2016-02-20 11:59:25 -0600 (Sat, 20 Feb 2016) | 2 lines
+
+tweak some auth/not auth stuff
+
+------------------------------------------------------------------------
+r591 | ninianne98 | 2016-02-19 07:27:32 -0600 (Fri, 19 Feb 2016) | 2 lines
+
+tweak of filename stuff for import of site content
+
+------------------------------------------------------------------------
+r590 | ninianne98 | 2016-02-14 12:31:05 -0600 (Sun, 14 Feb 2016) | 2 lines
+
+added WP url scrubbing for import
+
+------------------------------------------------------------------------
+r589 | ninianne98 | 2016-02-10 08:13:37 -0600 (Wed, 10 Feb 2016) | 2 lines
+
+refactor various classes
+
+------------------------------------------------------------------------
+r588 | ninianne98 | 2016-02-09 08:13:49 -0600 (Tue, 09 Feb 2016) | 3 lines
+
+remove obsolete classes
+added AdminFolderPath to reset email
+
+------------------------------------------------------------------------
+r587 | ninianne98 | 2016-02-09 08:12:35 -0600 (Tue, 09 Feb 2016) | 3 lines
+
+move emailer stuff into common web library as it is generic
+added cms version to email
+
+------------------------------------------------------------------------
+r586 | ninianne98 | 2016-02-08 08:46:48 -0600 (Mon, 08 Feb 2016) | 2 lines
+
+move FileDataHelper into generic web controls
+
+------------------------------------------------------------------------
+r585 | ninianne98 | 2016-02-07 13:23:23 -0600 (Sun, 07 Feb 2016) | 2 lines
+
+update carrotcake link
+
+------------------------------------------------------------------------
+r584 | ninianne98 | 2016-02-05 08:53:24 -0600 (Fri, 05 Feb 2016) | 2 lines
+
+file path refinement
+
+------------------------------------------------------------------------
+r583 | ninianne98 | 2016-02-04 07:41:31 -0600 (Thu, 04 Feb 2016) | 2 lines
+
+update string encoding so that accents get dropped when generating urls or slugs
+
+------------------------------------------------------------------------
+r582 | ninianne98 | 2016-02-02 13:12:25 -0600 (Tue, 02 Feb 2016) | 2 lines
+
+refactor tag enums
+
+------------------------------------------------------------------------
+r581 | ninianne98 | 2016-01-31 13:32:50 -0600 (Sun, 31 Jan 2016) | 2 lines
+
+exposed additional attributes in MostRecentUpdated to adv editor
+
+------------------------------------------------------------------------
+r580 | ninianne98 | 2016-01-29 13:38:46 -0600 (Fri, 29 Jan 2016) | 2 lines
+
+updated default sort
+
+------------------------------------------------------------------------
+r579 | ninianne98 | 2016-01-25 18:37:47 -0600 (Mon, 25 Jan 2016) | 3 lines
+
+added limited prop for widgets, added drop down options for some enums
+added enum helper
+
+------------------------------------------------------------------------
+r578 | ninianne98 | 2016-01-24 16:51:37 -0600 (Sun, 24 Jan 2016) | 2 lines
+
+delete old js file
+
+------------------------------------------------------------------------
+r577 | ninianne98 | 2016-01-24 15:49:07 -0600 (Sun, 24 Jan 2016) | 2 lines
+
+added search to plain template
+
+------------------------------------------------------------------------
+r576 | ninianne98 | 2016-01-24 15:48:48 -0600 (Sun, 24 Jan 2016) | 2 lines
+
+added jquery 1.12 to controls
+
+------------------------------------------------------------------------
+r575 | ninianne98 | 2016-01-23 13:53:55 -0600 (Sat, 23 Jan 2016) | 2 lines
+
+refactor auth flag checking
+
+------------------------------------------------------------------------
+r574 | ninianne98 | 2016-01-23 13:53:48 -0600 (Sat, 23 Jan 2016) | 2 lines
+
+added db and logon to public master, update dashboard to use filenname consts
+
+------------------------------------------------------------------------
+r573 | ninianne98 | 2016-01-22 19:29:43 -0600 (Fri, 22 Jan 2016) | 1 line
+
+added better long image name for gallery editing
+------------------------------------------------------------------------
+r572 | ninianne98 | 2016-01-18 14:13:19 -0600 (Mon, 18 Jan 2016) | 2 lines
+
+change ToLower/ToLowerInvariant and ToUpper/ToUpperInvariant
+
+------------------------------------------------------------------------
+r571 | ninianne98 | 2016-01-18 14:12:54 -0600 (Mon, 18 Jan 2016) | 2 lines
+
+change information_schema.columns to [INFORMATION_SCHEMA].[COLUMNS] to address case sensitivity
+
+------------------------------------------------------------------------
+r570 | ninianne98 | 2016-01-17 13:46:52 -0600 (Sun, 17 Jan 2016) | 4 lines
+
+fix for hilighted tabs in admin area
+update web.config and xsd
+security refactor
+
+------------------------------------------------------------------------
+r569 | ninianne98 | 2016-01-16 09:52:07 -0600 (Sat, 16 Jan 2016) | 2 lines
+
+add datetime helper user control to make for consistent edits of combo date/time fields
+
+------------------------------------------------------------------------
+r568 | ninianne98 | 2016-01-12 08:37:46 -0600 (Tue, 12 Jan 2016) | 1 line
+
+fix bad tag in template
+------------------------------------------------------------------------
+r567 | ninianne98 | 2016-01-10 11:30:50 -0600 (Sun, 10 Jan 2016) | 2 lines
+
+swap golivedate for createdate in template
+
+------------------------------------------------------------------------
+r566 | ninianne98 | 2016-01-09 11:52:38 -0600 (Sat, 09 Jan 2016) | 3 lines
+
+added auto title to widget admin module menu
+align old/new ContentEditHistory
+
+------------------------------------------------------------------------
+r565 | ninianne98 | 2016-01-08 08:37:14 -0600 (Fri, 08 Jan 2016) | 3 lines
+
+better 404 handling
+xml settings for sitemap
+
+------------------------------------------------------------------------
+r564 | ninianne98 | 2016-01-04 08:59:36 -0600 (Mon, 04 Jan 2016) | 2 lines
+
+refactor to include the limited property interface for widget mode on serveral controls
+
+------------------------------------------------------------------------
+r563 | ninianne98 | 2016-01-01 14:50:02 -0600 (Fri, 01 Jan 2016) | 2 lines
+
+misc ui cleanup
+
+------------------------------------------------------------------------
+r562 | ninianne98 | 2016-01-01 14:48:12 -0600 (Fri, 01 Jan 2016) | 2 lines
+
+added ShowInSiteNav to GetLevelDepthNavigation
+
+------------------------------------------------------------------------
+r561 | ninianne98 | 2016-01-01 14:46:19 -0600 (Fri, 01 Jan 2016) | 2 lines
+
+centeralized db update redirect logic
+
+------------------------------------------------------------------------
+r560 | ninianne98 | 2016-01-01 14:44:16 -0600 (Fri, 01 Jan 2016) | 2 lines
+
+added credits to logon page
+
+------------------------------------------------------------------------
+r559 | ninianne98 | 2016-01-01 14:38:51 -0600 (Fri, 01 Jan 2016) | 3 lines
+
+refactor of gallery to have base classes for common routines
+add jquery migrate to citrus island so testing of fancy box can be done as it requires the older jquery which the migrate library provides
+
+------------------------------------------------------------------------
+r558 | ninianne98 | 2016-01-01 14:36:49 -0600 (Fri, 01 Jan 2016) | 2 lines
+
+added mockup stuff for calendar
+
+------------------------------------------------------------------------
+r557 | ninianne98 | 2015-12-19 09:06:22 -0600 (Sat, 19 Dec 2015) | 2 lines
+
+updated form name in master, added better form action detection (name/vs tag type etc.)
+
+------------------------------------------------------------------------
+r556 | ninianne98 | 2015-12-18 07:58:07 -0600 (Fri, 18 Dec 2015) | 1 line
+
+update jQuery Upload File Plugin
+------------------------------------------------------------------------
+r555 | ninianne98 | 2015-12-17 22:38:01 -0600 (Thu, 17 Dec 2015) | 1 line
+
+rename several directories
+------------------------------------------------------------------------
+r554 | ninianne98 | 2015-12-17 07:50:29 -0600 (Thu, 17 Dec 2015) | 2 lines
+
+added some dispose stuff that should have been added a long time ago
+
+------------------------------------------------------------------------
+r553 | ninianne98 | 2015-12-16 08:29:29 -0600 (Wed, 16 Dec 2015) | 4 lines
+
+default save notice to hidden
+take out jquery doc.write
+update column order
+
+------------------------------------------------------------------------
+r552 | ninianne98 | 2015-12-12 10:09:18 -0600 (Sat, 12 Dec 2015) | 4 lines
+
+change js variable assignment from server side
+made so to unlock must be the locking user
+added additional jquery inclusion
+
+------------------------------------------------------------------------
+r551 | ninianne98 | 2015-12-12 10:00:21 -0600 (Sat, 12 Dec 2015) | 3 lines
+
+added fix for ajax loaded tooltips from a panel post
+refactor of GetFolderInfo and SiteSkinEdit
+
+------------------------------------------------------------------------
+r550 | ninianne98 | 2015-12-05 14:24:02 -0600 (Sat, 05 Dec 2015) | 1 line
+
+fix parent scope change for gallery
+------------------------------------------------------------------------
+r549 | ninianne98 | 2015-12-04 21:27:39 -0600 (Fri, 04 Dec 2015) | 2 lines
+
+added logic for Parent_ContentID == Guid.Empty
+
+------------------------------------------------------------------------
+r548 | ninianne98 | 2015-12-04 09:19:18 -0600 (Fri, 04 Dec 2015) | 2 lines
+
+revise mobile/tablet/desktop preview
+
+------------------------------------------------------------------------
+r547 | ninianne98 | 2015-12-03 08:16:55 -0600 (Thu, 03 Dec 2015) | 2 lines
+
+first pass set up mobile/tablet/desktop preview
+
+------------------------------------------------------------------------
+r546 | ninianne98 | 2015-12-02 08:22:02 -0600 (Wed, 02 Dec 2015) | 2 lines
+
+added wrapper to edit/delete in photo gallery editor
+
+------------------------------------------------------------------------
+r545 | ninianne98 | 2015-11-29 13:47:58 -0600 (Sun, 29 Nov 2015) | 1 line
+
+added Ring image in footer for pre-load purposes
+------------------------------------------------------------------------
+r544 | ninianne98 | 2015-11-27 10:30:36 -0600 (Fri, 27 Nov 2015) | 2 lines
+
+update first page template
+
+------------------------------------------------------------------------
+r543 | ninianne98 | 2015-11-25 08:02:56 -0600 (Wed, 25 Nov 2015) | 4 lines
+
+updated GenerateSimplePassword to make sure it always had alpha, number, and symbol
+added improved cmsAjaxFailedSwallow logic
+made GetDbSchemaVersion() threadsafe (locked)
+
+------------------------------------------------------------------------
+r542 | ninianne98 | 2015-11-23 11:42:56 -0600 (Mon, 23 Nov 2015) | 3 lines
+
+added missing golive/retire when copying widgets
+refactor of text widget loading
+
+------------------------------------------------------------------------
+r541 | ninianne98 | 2015-11-21 13:27:17 -0600 (Sat, 21 Nov 2015) | 5 lines
+
+update to change sql view that is used to provide current page categories
+tweak of adv editor stuff
+added simpler way of getting full file path to photo gallery
+updated filebrowser to be able to load without params (provide default values)
+
+------------------------------------------------------------------------
+r540 | ninianne98 | 2015-11-17 08:43:49 -0600 (Tue, 17 Nov 2015) | 1 line
+
+update component list
+------------------------------------------------------------------------
+r539 | ninianne98 | 2015-11-16 09:04:24 -0600 (Mon, 16 Nov 2015) | 4 lines
+
+update FixOrphanPages - remove parent page for blog posts
+refactor / rename
+update ExpressionVisitor to reflect the MS GitHub MIT reference version
+
+------------------------------------------------------------------------
+r538 | ninianne98 | 2015-11-15 11:42:42 -0600 (Sun, 15 Nov 2015) | 2 lines
+
+added Tooltipster
+
+------------------------------------------------------------------------
+r537 | ninianne98 | 2015-11-15 11:23:36 -0600 (Sun, 15 Nov 2015) | 2 lines
+
+centralize presave trigger for tiny, added notice layer appearance for editing own profile
+
+------------------------------------------------------------------------
+r536 | ninianne98 | 2015-11-14 10:39:21 -0600 (Sat, 14 Nov 2015) | 2 lines
+
+update Nested Sortable
+
+------------------------------------------------------------------------
+r535 | ninianne98 | 2015-11-13 08:40:54 -0600 (Fri, 13 Nov 2015) | 2 lines
+
+Upgrade GPL part of license from v2 to v3
+
+------------------------------------------------------------------------
+r534 | ninianne98 | 2015-11-13 08:25:08 -0600 (Fri, 13 Nov 2015) | 2 lines
+
+improve database creation process
+
+------------------------------------------------------------------------
+r533 | ninianne98 | 2015-11-10 07:56:50 -0600 (Tue, 10 Nov 2015) | 2 lines
+
+breaking change for direct use of SiteNavHelper, use SiteNavFactory instead: ISiteNavHelper navHelper = SiteNavFactory.GetSiteNavHelper()
+
+------------------------------------------------------------------------
+r532 | ninianne98 | 2015-11-07 09:58:21 -0600 (Sat, 07 Nov 2015) | 2 lines
+
+update LinqToSqlExtensions / ExpressionExtensions URL info
+
+------------------------------------------------------------------------
+r531 | ninianne98 | 2015-11-05 07:57:58 -0600 (Thu, 05 Nov 2015) | 3 lines
+
+added class meta-item to item values vs caption elements in category/tag listing
+added nearest 5% rounded element class (in cases of tag cloud where usage count is desired to drive size)
+
+------------------------------------------------------------------------
+r530 | ninianne98 | 2015-11-04 07:24:28 -0600 (Wed, 04 Nov 2015) | 2 lines
+
+centralized some IsHomePage logic
+
+------------------------------------------------------------------------
+r529 | ninianne98 | 2015-10-30 08:52:25 -0500 (Fri, 30 Oct 2015) | 2 lines
+
+added support to use chosen for tag/category selection
+
+------------------------------------------------------------------------
+r528 | ninianne98 | 2015-10-27 20:41:09 -0500 (Tue, 27 Oct 2015) | 2 lines
+
+update iCheck image for custom 4
+
+------------------------------------------------------------------------
+r527 | ninianne98 | 2015-10-25 18:07:58 -0500 (Sun, 25 Oct 2015) | 3 lines
+
+added sample head/foot config entry
+added hover checked style
+
+------------------------------------------------------------------------
+r526 | ninianne98 | 2015-10-24 16:34:30 -0500 (Sat, 24 Oct 2015) | 4 lines
+
+refactor: move reflecction utils into generic web project since it does not depend on any CMS specific data and could be used outside of the CMS
+added two new auto insert of user controls for public facing area
+refactor of breadcrumb logic
+
+------------------------------------------------------------------------
+r525 | ninianne98 | 2015-10-21 09:06:30 -0500 (Wed, 21 Oct 2015) | 3 lines
+
+change .Count > 0 to .Any()
+change to breadcrumb - have blog posts reflect the index page and include post's title in breadcrumb
+
+------------------------------------------------------------------------
+r524 | ninianne98 | 2015-10-20 09:14:09 -0500 (Tue, 20 Oct 2015) | 2 lines
+
+added toggle of active status of widget from adv editor
+
+------------------------------------------------------------------------
+r523 | ninianne98 | 2015-10-19 08:15:46 -0500 (Mon, 19 Oct 2015) | 2 lines
+
+made a green+grey iCheck theme
+
+------------------------------------------------------------------------
+r522 | ninianne98 | 2015-10-18 13:28:30 -0500 (Sun, 18 Oct 2015) | 2 lines
+
+added file drag/drop support
+
+------------------------------------------------------------------------
+r521 | ninianne98 | 2015-10-11 12:24:35 -0500 (Sun, 11 Oct 2015) | 2 lines
+
+added future only event filter
+
+------------------------------------------------------------------------
+r520 | ninianne98 | 2015-10-10 22:19:54 -0500 (Sat, 10 Oct 2015) | 2 lines
+
+reformat of event calendar code
+
+------------------------------------------------------------------------
+r519 | ninianne98 | 2015-10-10 09:44:50 -0500 (Sat, 10 Oct 2015) | 2 lines
+
+added notify of editors support for comments
+
+------------------------------------------------------------------------
+r518 | ninianne98 | 2015-10-08 20:35:36 -0500 (Thu, 08 Oct 2015) | 3 lines
+
+added filters to comment index
+reformat major paged data screens
+
+------------------------------------------------------------------------
+r517 | ninianne98 | 2015-10-07 21:59:48 -0500 (Wed, 07 Oct 2015) | 2 lines
+
+additional paged grid refactor
+
+------------------------------------------------------------------------
+r516 | ninianne98 | 2015-10-07 13:44:29 -0500 (Wed, 07 Oct 2015) | 3 lines
+
+minor version bump
+extracted paged grid into general web project as it is independent of the CMS
+
+------------------------------------------------------------------------
+r515 | ninianne98 | 2015-10-03 23:07:02 -0500 (Sat, 03 Oct 2015) | 3 lines
+
+address issue with iCheck and using jQuery to set checkbox state
+add stronger test for whether system needs to be updated or not
+
+------------------------------------------------------------------------
+r514 | ninianne98 | 2015-09-26 21:52:26 -0500 (Sat, 26 Sep 2015) | 3 lines
+
+string reformat
+add image to opengraph
+
+------------------------------------------------------------------------
+r513 | ninianne98 | 2015-09-22 21:36:53 -0500 (Tue, 22 Sep 2015) | 3 lines
+
+avoid trailing symbols in filenames/slugs
+set up so that content can map to the existing version if importing a single page/post
+
+------------------------------------------------------------------------
+r512 | ninianne98 | 2015-09-21 22:09:57 -0500 (Mon, 21 Sep 2015) | 2 lines
+
+refactor so status does not affect sort
+
+------------------------------------------------------------------------
+r511 | ninianne98 | 2015-09-20 14:02:52 -0500 (Sun, 20 Sep 2015) | 2 lines
+
+wire in snippet escaping
+
+------------------------------------------------------------------------
+r510 | ninianne98 | 2015-09-19 18:35:29 -0500 (Sat, 19 Sep 2015) | 2 lines
+
+fix for overzealous cleanup of unused usings
+
+------------------------------------------------------------------------
+r509 | ninianne98 | 2015-09-19 18:24:33 -0500 (Sat, 19 Sep 2015) | 8 lines
+
+added ability to trigger time picker on image, and calendar for both
+fix some spelling issues in some forms
+update jquery ui css
+incorporate iCheck checkbox/radio button plugin
+added snippets to dashboard
+added complex reflection based sorting capability
+fix for duplicate heading placeholder CARROT_PAGE_DATE_GOLIVE
+
+------------------------------------------------------------------------
+r508 | ninianne98 | 2015-08-29 18:05:55 -0500 (Sat, 29 Aug 2015) | 4 lines
+
+minor refactor to inject some of the widget interface data and also to stop using the strings rather than typeof for type comparison
+minor mods to jquery load behaviour for adv editor
+first pass for date filter of event profiles
+
+------------------------------------------------------------------------
+r507 | ninianne98 | 2015-04-14 19:51:23 -0500 (Tue, 14 Apr 2015) | 4 lines
+
+widened page controls
+trans scope to prevent partial deletion
+added ability to delete content and reroute the homepage if needed
+
+------------------------------------------------------------------------
+r506 | ninianne98 | 2015-04-04 17:34:36 -0500 (Sat, 04 Apr 2015) | 2 lines
+
+re-arrange where the widget SQL DB scripts live
+
+------------------------------------------------------------------------
+r505 | ninianne98 | 2015-04-04 12:38:08 -0500 (Sat, 04 Apr 2015) | 3 lines
+
+added credit author to adv editor
+added fallback alpha sort for module menu items
+
+------------------------------------------------------------------------
+r504 | ninianne98 | 2015-03-31 23:08:48 -0500 (Tue, 31 Mar 2015) | 9 lines
+
+added ability to create a starter homepage when creating a new site profile (check a box)
+refactor to make certain of the database key for the included widget projects
+added some more edit alerts and some CSS for the adv editor
+added a saved message layer to popups
+added ability to generate content snippet slugs
+added page modified and golive dates to URL pattern placeholder logic
+added site tagline to page head pattern
+added FAQ engine 2.0
+
+------------------------------------------------------------------------
+r503 | ninianne98 | 2015-03-21 19:01:26 -0500 (Sat, 21 Mar 2015) | 2 lines
+
+fix for minor ajax issue for when adding a new page through the advanced editor
+
+------------------------------------------------------------------------
+r502 | ninianne98 | 2015-03-15 00:44:48 -0500 (Sun, 15 Mar 2015) | 2 lines
+
+minor update to default template and default new site landing page
+
+------------------------------------------------------------------------
+r501 | ninianne98 | 2015-03-15 00:31:39 -0500 (Sun, 15 Mar 2015) | 3 lines
+
+update jquery ui to 1.11.4
+update to jquery 1.11.2
+
+------------------------------------------------------------------------
+r500 | ninianne98 | 2015-03-08 18:21:08 -0500 (Sun, 08 Mar 2015) | 4 lines
+
+minor update to page titles
+added link image on comment page to allow direct launch of the related URL for the comment
+minor update to reset messages so a few more cases of send errors are caught
+
+------------------------------------------------------------------------
+r499 | ninianne98 | 2015-03-07 11:34:51 -0600 (Sat, 07 Mar 2015) | 9 lines
+
+minor revision to allow setting of main font vs all child element fonts, also added support to toggle between PX and EM on fontsize
+updated jquery UI to 1.11.3 and updated CSS for editor
+updated database solution
+added ability to use prev/next controls in content summary footer controls
+centralize version keys for database versioning
+added ability to indicate a credited author rather than having to use the actual last editor (allows for a proof reader to credit the original author or a specific user)
+update of SQL scripts that create the database
+added better tally reflection regarding whether or not items that are categorized or not are reflected within the public or not public items
+
+------------------------------------------------------------------------
+r498 | ninianne98 | 2014-10-22 23:24:59 -0500 (Wed, 22 Oct 2014) | 7 lines
+
+updated jquery ui library and added text transform reset
+converted to use json stringify
+added some auto formatting of category and tag slugs
+added override for Image border width to resolve .Net bug with setting image width to 0 when not set
+added ability to escape spaces with file upload
+added missing jquery 1.8 to jquery control and tuned the add of jquery/jquery ui code to be more reliable when the template is missing the include
+
+------------------------------------------------------------------------
+r497 | ninianne98 | 2014-10-22 23:23:57 -0500 (Wed, 22 Oct 2014) | 7 lines
+
+updated jquery ui library and added text transform reset
+converted to use json stringify
+added some auto formatting of category and tag slugs
+added override for Image border width to resolve .Net bug with setting image width to 0 when not set
+added ability to escape spaces with file upload
+added missing jquery 1.8 to jquery control and tuned the add of jquery/jquery ui code to be more reliable when the template is missing the include
+
+------------------------------------------------------------------------
+r496 | ninianne98 | 2014-09-27 15:04:21 -0500 (Sat, 27 Sep 2014) | 5 lines
+
+updated code for prettyphoto for current jquery version support
+removed some exteranous variables that were not being used
+added ability to default seed an event category and provide some cancel buttons
+updated tinymce to v3.5.11
+
+------------------------------------------------------------------------
+r495 | ninianne98 | 2014-07-17 22:39:12 -0500 (Thu, 17 Jul 2014) | 2 lines
+
+added thumbnail capabilities to the file browser, limited to image mime types
+
+------------------------------------------------------------------------
+r494 | ninianne98 | 2014-07-11 00:35:17 -0500 (Fri, 11 Jul 2014) | 3 lines
+
+added the migrate jquery script and added a boolean to indicate whether or not to use the migrate script
+added the jquery migrate script to an older template from Artisteer
+
+------------------------------------------------------------------------
+r493 | ninianne98 | 2014-07-08 20:03:03 -0500 (Tue, 08 Jul 2014) | 4 lines
+
+update several jquery plugins to be compatable to with jquery 1.11
+update jquery and jquery UI resources
+removed a test jquery ui library that is not being used
+
+------------------------------------------------------------------------
+r492 | ninianne98 | 2014-07-05 12:48:24 -0500 (Sat, 05 Jul 2014) | 6 lines
+
+added ability to turn off the span wrapper on the paged data control (for CSS/template usage purposes)
+added blocker flag to prevent double attempts at saving widget re-arangements
+added ability to ignore the usage context for the paged data summary control
+fix for stray close div in editing control
+added ability to hide comment form if the viewing user is not authenticated
+
+------------------------------------------------------------------------
+r491 | ninianne98 | 2014-01-07 20:12:20 -0600 (Tue, 07 Jan 2014) | 7 lines
+
+event cal: update sort order for event display, for consistent ordering of enable/disable
+further update of the revised tally sproc, update create script and database project to include the revisions
+added basic slug string support to the paged data summary for filter (uses human friendly rather than GUID)
+update the captcha control to provde some parameter based styling or css tags so that appearance can be easily customized based on use context
+added ability to specify an email to send comment form replies to or a web.config key name
+added support to provide a group name for auto approval of comments, or go against the admin membership status
+
+------------------------------------------------------------------------
+r490 | ninianne98 | 2013-10-02 22:32:14 -0500 (Wed, 02 Oct 2013) | 3 lines
+
+updated date cutoff logic so a full day doesn't have to pass for items within the date offset to appear in the archive list
+update create script and database project to include the revisions
+
+------------------------------------------------------------------------
+r489 | ninianne98 | 2013-07-31 19:49:27 -0500 (Wed, 31 Jul 2013) | 8 lines
+
+additional escaping of bodies in medium block
+minor alteration to the edit history to distinguish between user created date and content creation date attributes
+added an optional 301 redirect trigger for use with the SiteCanonicalURL control.
+updated database create script to include the latest database schema
+updated the database project to include some of the more recent features such as snippets
+updated to make sure that the content category and tags only save when the content type is a blog post
+added a constant for the sort order of blog posts
+
+------------------------------------------------------------------------
+r488 | ninianne98 | 2013-07-08 20:13:23 -0500 (Mon, 08 Jul 2013) | 15 lines
+
+added logic to the cannonical link renderer to show / for the homepage and the actual file name for other pages
+event calendar: added ability to set recurring interval for weekly/monthly/yearly events
+added override start/end time for individual event occourences
+added support to show date for the updates list as well as formatting of the date
+modified the child/sibling logic to not look for parent when x.ShowInSiteNav == true).Count() > 0 rather than just .Count() > 0
+set so that the edit notifier drop down maxes out @ a moderate px width
+event calendar: added day of week to admin list
+event calendar: added filtering of category legend to only show those in use on the current month
+event calendar: made sure there was consistent labling of cancelled events
+created a control to show the parent page's siblings (for use in deep sites)
+added hilighting to go against a given page's breadcrumb path as a secondary flagger so that deep pages will still get flagged tabs so you know what top level area you are in
+converted to use buttons for the copy all/clear all gallery images
+added test so that invalid tags/categories/authors do not throw errors when attempting to grab the title caption
+added count of gallery contents and ability to either clear a gallery or copy all of the source list contents to the gallery
+
+------------------------------------------------------------------------
+r487 | ninianne98 | 2013-06-28 19:21:40 -0500 (Fri, 28 Jun 2013) | 37 lines
+
+added ability to view the content history to the admin UI in order to get quick snapshots of current activity and who is updating content
+cleaned up some of the widget abstract base classes, made sure both webcontrol and usercontrol were equally represented
+added css to seperate the menu links in the admin module index
+removed a number of previously obseleted properties
+fixed issue for when editing in advanced mode, the previous editor was getting credit for the edit
+minor refactors of the gallery widgets, reorg of some code, use of some of the new base classes as needed
+minor update and refactor of the old calendar and the faq widgets
+event calendar: atweaked month listing to block empty values
+event calendar: atweaked edit text for calendar
+event calendar: added clone/copy event and ability to delete a calendar entry
+event calendar: added some additional logic to the date shifting logic to use the weeks moved to determine better move patterns when a weekly schedule is moved
+event calendar: added an alternate data repeater variant and added a pair of month/year drop downs to go +/- 10 years
+event calendar:  edited some tool tip text and information presentation
+event calendar: tweak of upcoming calendar
+put in meaninful defaults for cases when the retire/golive for widgets is left blank
+photo gallery: added a test for file grabbing so that if there is a 404 it will keep chugging, but other errors will throw
+set it so that the adminmodules could be missing the header groups and modules screen won't break
+changed the logic to determine if the modules menu should appear to use the count rather than the root level config file's existance
+event calendar: added prelim view of the single events
+event calendar: added color swatch to the edit event profile
+added some basic support for repeating weekly on specified days
+added support to remap a monthly or annual event to the right day of the month (use month delta) rather than solely relying on the day shift
+event calendar: added color code drop downs to the category editor
+event calendar: added ability to list the recurring profiles of the events
+event calendar: modified behavior of public presented view
+event calendar: updated logic to asert the last day or two of month in cases of monthly or annual events (leap day)
+added the common query string parsers to the parm parser in the interfaces bundle as it is a basic routine that can be used genericly
+refactored some of the common routines for parsing input parms into a central location for easier consumption/reuse
+added some indexes to key FK fields in core tables
+added concept of getting a category or editor data per site based on the constructed URL
+added ability to access the widget time and history from the admin back end area
+consolidated adv editor popup for adding child or top page into single control that uses the drill down control to pick any parent or none depending on top or not
+moved css to drive the drill down control into the common css file from main as popups need it now
+adjusted some logic for assigning the sort position for new pages
+added preliminary support to widgets so that they can be turned on/off on a particular date/time
+added sql for database updates as well as expose GUI for editing the date/time
+
+------------------------------------------------------------------------
+r486 | ninianne98 | 2013-06-17 01:20:42 -0500 (Mon, 17 Jun 2013) | 15 lines
+
+update code to use new logic for timezone changes and what affects the blog URL paths when the TZ is changed
+updated and centralized some logic that detects special path logic
+added support to copy widgets from another page into the current page's selected placeholder.
+refactor use of NavHelper in httphandler
+fixes for when CarrotGridView DataSource is null
+first pass at wiring in a copy widget from another page (menu and css hooks)
+added ability to keep adding more child or more top level pages rather than having to continue closing and relaunching the add top/child page UI
+added support for copying a widget and its widget settings
+added support for attributes to specify a multi-line plain text or a rich html textbox (engage TinyMCE) instead of limiting to a single line textbox data type
+fix for when the user's session did not totally clear authentication ticket
+added better testing for authorized editors, streamlined some of the IsAuth code for readability
+added SiteID to site list and site URL to site detail screen
+added ability to assign an index and apply a template on the template assignment page even if no prior template was assigned
+created a server control (ImageSizer) to present the image resize handler (carrotwarethumb.axd) and updated gallery code to use the control where possible
+
+------------------------------------------------------------------------
+r485 | ninianne98 | 2013-06-13 23:05:56 -0500 (Thu, 13 Jun 2013) | 36 lines
+
+moved around some menu items to make more sensible groupings
+added bit flag icons to the site list, added listing of sites and ability to review users tied to sites
+improvements to add/remove a user from a site mapping or role
+added ability to view security in the context of what users are mapped to a particular site and add/remove users
+added ability to set the index page when performing the site wide template assignment
+refinement of database testing code, UI improvements for width of the add/edit views for content
+update the view that generates the user URL to be a cross join to get all combinations of users and sites
+created server control to render a link for the author data that will work in both bound lists (paged data) and as a single page.
+added bio support for author/editor
+added support for using an author URL to get indexes for when an editor is being retrieved
+split user profile and user password screens and added bio data to profile popup
+made a user profile drop down menu for password, profile, and logout, rather than 2 seperate top level menus
+added prompt for users to confirm that they want to log out
+added heartbeat fields to table to support locks of content snippets
+added locks for edits of snippets (same as main content)
+increated ajax lock heartbeat (because serverside init)
+added some exception flagging to when the database updater runs
+tweaked page lock behavior and timings for resource locking
+added lightbulbs as status indicators to the DB updater as well as a flag to show that an update was ran against the DB
+added support for having a no results message on paged data
+updated some widths within citrus island to make more of the space larger resolutions have
+refactor to have both kinds of site import provide meaninful default templates for content
+added support for importing content snippets via the import content UI
+added the content snippets to the import and export feature
+added a backup version test for the database updater
+added retire concept to the content snippet, built server control to provide desiger consumption, wired in support for being used as a widget
+created data store for content snippet
+created index, add/edit, and history UI for managing content snippets
+added a snippet processor to the text widget support
+implemented IE8 jquery DDL fix for preview template names being blank
+added a Blank.htm file for IE 9 issues when loading in an iframe, additionally, re-orchestrate how the iframes are called to eliminate jQuery load problems
+fix bad reference to ddlValue instead of chkValues
+update to fix bad property id in fancy box gallery
+placed guard for null/empty cached widget list
+added ability to see and edit the two types of built in text widgets - ContentRichText & ContentPlainText
+
+------------------------------------------------------------------------
+r484 | ninianne98 | 2013-06-02 01:23:49 -0500 (Sun, 02 Jun 2013) | 14 lines
+
+added a UI to manage which assemblies are to be used for text processing and which types they should be used for
+tuning of the update process and the text processor logic
+added a table store a version code to determine if an update should be done
+made the text widget bit safe for the "global" entity with regard to database issues
+added version count to the page and blog index table views, added retire data, too
+began working to support text pre-processors for site content that will allow code to be passed in to scrub content area text and the plain and html text widgets, as well as the abreviated text for the nav med and small context
+made a text processor plugin that will escape/munge an email address
+added version history count to the content view (schema change)
+added table to schema to support the text widget preference
+updated database project to include current schema
+added support for a first/last paging control
+improvements for tab indicators of comment viewer
+added delete comment support
+
+------------------------------------------------------------------------
+r483 | ninianne98 | 2013-05-28 21:39:32 -0500 (Tue, 28 May 2013) | 4 lines
+
+added ability to delete a blog category or blog tag
+added support to create a previous/next link so that the search or other index page can perform previous/next navigation rather than forcing a full page count pager
+add meta crawl block to some system messages
+
+------------------------------------------------------------------------
+r482 | ninianne98 | 2013-05-27 00:16:57 -0500 (Mon, 27 May 2013) | 3 lines
+
+added format support for the paged data listing such as category/tag/date/month/search etc.
+update to menu CSS for advanced edit to get some more consistent behavior between Chrome and other browsers
+
+------------------------------------------------------------------------
+r481 | ninianne98 | 2013-05-23 23:12:10 -0500 (Thu, 23 May 2013) | 6 lines
+
+resolved some issues with the show posts for a given date if they were within the timezone offset of the end of a day
+update the advanced editor css to address some bad behavior in Chrome
+added ability to block site meta word entries if they have no related items
+created dashboard screen with common actions presented
+added file existance testing caching to the physical file test and site id to both cached file testing
+
+------------------------------------------------------------------------
+r480 | ninianne98 | 2013-05-12 21:05:03 -0500 (Sun, 12 May 2013) | 2 lines
+
+created basic preformat source code insertion support for generating pre tag areas for use with SyntaxHighlighter js library
+
+------------------------------------------------------------------------
+r479 | ninianne98 | 2013-05-05 18:28:01 -0500 (Sun, 05 May 2013) | 3 lines
+
+added support so that meta robots could be recycled if found as a meta header
+added override to the validators to make text boxes have background that matches the error state
+
+------------------------------------------------------------------------
+r478 | ninianne98 | 2013-04-17 23:08:45 -0500 (Wed, 17 Apr 2013) | 7 lines
+
+made the user profile boxes be side by side instead of one on top of another
+added link on the about page to go to the carrotware website
+revision to file browser image preview code
+added reversion icon for inactive preview
+added basic file mapper functionalty for admin controls so that local to the control images or CSS can be resolved.
+added some simple improvements to the photo gallery: general thumbnail with preview of mouseover for list, actual thumbnail for items in selected list
+
+------------------------------------------------------------------------
+r477 | ninianne98 | 2013-04-12 17:28:32 -0500 (Fri, 12 Apr 2013) | 12 lines
+
+upate so that the ajax trackback firing only does so if the user has not triggered the ok to leave state
+added auto fire of validation on several key forms so that it is clear from inital load that some fields have validation constraints
+added an "add page" and "add post" menu item to their respective menus
+updated verbiage from not valid/unique to not valid/not unique
+changed to a 15 sec cache for unauthenticated users
+tweaks to password reset functionality - add required validator to the email field
+added required field validation to logon form
+added jquery info box styling to changed password text
+tweak to some of the validation processes and basic layout of the site info page
+major tweaks to validation error alerts - conversions to using alert boxes when page is likely to scroll
+centralize the code that is used when leaving the back end editor
+
+------------------------------------------------------------------------
+r475 | ninianne98 | 2013-04-06 23:06:34 -0500 (Sat, 06 Apr 2013) | 8 lines
+
+updated some menu images to use css class instead of border=0
+tweak some alertboxes to use smaller box
+made some menus headings wider to eliminate wrapping
+further expansion of the popup conversion for error messages
+refinement of validation routine for blocking duplicate blog post file names
+added ability to find meta keyword and description already in header and use that version and inject only when not already present.
+first stab at adding jquery UI alerts on validation - help avoid missing errors validating by performing a popup alert
+
+------------------------------------------------------------------------
+r474 | ninianne98 | 2013-04-01 23:02:16 -0500 (Mon, 01 Apr 2013) | 8 lines
+
+added username lookup logic to the native content import
+additional tweaks to logic for new WP record imports
+read out author ids and create new user accounts if not matches
+minor refactor to extract some common things for reuse
+css touchup of history list
+added handling of image URI that has an http or other protocol locator prefix
+clean up of some add+edit page layout
+
+------------------------------------------------------------------------
+r473 | ninianne98 | 2013-03-31 20:25:06 -0500 (Sun, 31 Mar 2013) | 2 lines
+
+removed doubled up title bar text from page when viewing category/search pages
+
+------------------------------------------------------------------------
+r472 | ninianne98 | 2013-03-31 18:42:12 -0500 (Sun, 31 Mar 2013) | 3 lines
+
+tweaks to tinymce init routine to allow resize when possible
+added minor enhancement to RSS image path resolvers
+
+------------------------------------------------------------------------
+r471 | ninianne98 | 2013-03-30 00:17:29 -0500 (Sat, 30 Mar 2013) | 8 lines
+
+provided way to force all blog entries to a uniform sort/nav behavior in case during imports the data is not properly set
+refactors against carrotgridpaged, restructure embeded resource grabbing
+changed HttpContext.Current.Server.HtmlEncode to HttpUtility.HtmlEncode
+minor update to include new icons for history in page/blog list
+added support to show the list of widgets for a given page/post and turn them on or off as desired from admin backend
+added aditional empty table text details
+add some default wiring in for initing some of the admin modules
+
+------------------------------------------------------------------------
+r470 | ninianne98 | 2013-03-29 01:09:56 -0500 (Fri, 29 Mar 2013) | 5 lines
+
+minor update to include new icons for history in page/blog list
+added support to show the list of widgets for a given page/post and turn them on or off as desired from admin backend
+added aditional empty grid text details
+created a parsing class in the interfaces as a central location regarding admin area modules
+
+------------------------------------------------------------------------
+r469 | ninianne98 | 2013-03-24 21:43:19 -0500 (Sun, 24 Mar 2013) | 2 lines
+
+update tinyMCE to 3.5.8 (part 2)
+
+------------------------------------------------------------------------
+r468 | ninianne98 | 2013-03-24 21:42:17 -0500 (Sun, 24 Mar 2013) | 4 lines
+
+update tinyMCE to 3.5.8
+minor cosmetic tweaks to the bulk template changers
+tweaked designer of the paged carrot grid
+
+------------------------------------------------------------------------
+r467 | ninianne98 | 2013-03-20 22:29:06 -0500 (Wed, 20 Mar 2013) | 6 lines
+
+added additional mime types
+update GUI for adding a user to match the create first admin
+removed some non-html5 compliant table code (cellpadding, valign etc)
+updated jquery ui javascript to 1.10.2
+added html escaping to embeded resources
+
+------------------------------------------------------------------------
+r466 | ninianne98 | 2013-03-18 18:27:16 -0500 (Mon, 18 Mar 2013) | 9 lines
+
+added common routine for parsing checkboxes attribute values to the general utilities class
+moved querystring parsing logic into general utilities library
+updated create scripts as they were incomplete
+minor improvements to site import routines
+minor cosmetic updates to account creation and logon
+added EnsureChildControls() to render methods
+added support so that widgets can support multiple menu options
+added ability to main content areas to edit either html or plain text
+
+------------------------------------------------------------------------
+r465 | ninianne98 | 2013-03-18 18:18:16 -0500 (Mon, 18 Mar 2013) | 8 lines
+
+refactor to move the general utilities into the cms controls zone
+went for a non postback mode of turning on/off the date based filter
+attempt at improving the designer behavior of the CarrotGridPaged control
+refactor to use new bind methodologies
+updated to use SQL min/max date in sql date queries
+tweaks of the widget adder - seperated out some of the wrapping logic
+refactor to include some new querystring parsing routines for common operations (guid ID from querystring, both std names and by providing paramters)
+
+------------------------------------------------------------------------
+r464 | ninianne98 | 2013-03-18 18:09:30 -0500 (Mon, 18 Mar 2013) | 4 lines
+
+added default sorting to the status change search results
+refactored out some direct DB access for user and site mgmt
+cleaned out some width and valign table/td elements, replaced with with style widths
+
+------------------------------------------------------------------------
+r463 | ninianne98 | 2013-03-13 19:06:45 -0500 (Wed, 13 Mar 2013) | 11 lines
+
+created IsWebView to use instead of having to constantly check HttpContext.Current != null
+created some basic utilities for binding so that it is easy to stuff default items or preselect when needed
+added support for the paged data to accept alternating blocks
+changed the get current page logic to be a static method because its all about the current url and current site
+minor reformatting of admin css
+tweak the fallback page template
+misc fixes for where the VS designer was erroring out
+added additional site page constants - wired in various new filename constants
+added ability to specify what page heading captions are desired for the different paged data mode renderings
+added site identity to header area of admin area, updated the X for the close modal popup, added new config setting for "search" results to the citrus template
+
+------------------------------------------------------------------------
+r462 | ninianne98 | 2013-03-10 22:39:08 -0500 (Sun, 10 Mar 2013) | 2 lines
+
+removed unused shim image
+
+------------------------------------------------------------------------
+r461 | ninianne98 | 2013-03-10 22:38:33 -0500 (Sun, 10 Mar 2013) | 4 lines
+
+added basic inclusion of recent updates and recent new to show up in the RSS
+tweaked to include an arrow image rather than the unicode character for admin menu
+added zips of originals rather than leaving behind the stray raw html
+
+------------------------------------------------------------------------
+r460 | ninianne98 | 2013-03-10 01:30:16 -0600 (Sun, 10 Mar 2013) | 10 lines
+
+added defaulting of sitenav/sitemap inclusion for WP imports
+added default value for /date/ when creating a new site
+refactor to allow for common base content page code to be centralized
+restructure widget container so that postback works with master pages
+refactored out logic to pick off the current page and widget data so that it is more eficient and more centrally located
+added text body content zone identifier to the advanced edit header row
+implementation of master page class - created a generic base page that implements the masterpage so as to share the same contentpage object
+created basemasterpage class so that master pages can be utilized, added property to may of the nav controls so that they can be toggled between the ID and the client ID when rendered - simplifies ID scopes between plain and master page implementations
+broke out stylesheet for edit notifier
+
+------------------------------------------------------------------------
+r459 | ninianne98 | 2013-03-06 22:02:39 -0600 (Wed, 06 Mar 2013) | 4 lines
+
+wrapped some one-off version keys with the centralized version info
+made the adv edit toolbox heading display version info
+added support to remember the widget toolbox scroll postion
+
+------------------------------------------------------------------------
+r458 | ninianne98 | 2013-03-06 00:45:50 -0600 (Wed, 06 Mar 2013) | 2 lines
+
+inserted some styling fixes to prevent some quirkyness of some template CSS classes
+
+------------------------------------------------------------------------
+r457 | ninianne98 | 2013-03-04 23:18:01 -0600 (Mon, 04 Mar 2013) | 4 lines
+
+added jquery error style to logon and forgot password pages
+added database field to support customizing of the archive/date blog path
+added in some CSS for consistency in table styling
+
+------------------------------------------------------------------------
+r456 | ninianne98 | 2013-03-03 15:08:13 -0600 (Sun, 03 Mar 2013) | 3 lines
+
+added ability to scale preview mode in adv edit, split tabs so page info and templates are in their own tabs
+added ability to spin through different templates in the adv editor popup
+
+------------------------------------------------------------------------
+r455 | ninianne98 | 2013-03-02 22:40:59 -0600 (Sat, 02 Mar 2013) | 4 lines
+
+tweak of tinymce menus - include more options
+fix preview mode navigation getting blocked - due to dummy data not having some of the required nav flags
+tweak menu code so that parent/child IDs connect and made class specification smarter
+
+------------------------------------------------------------------------
+r454 | ninianne98 | 2013-02-25 23:21:07 -0600 (Mon, 25 Feb 2013) | 3 lines
+
+fix issue where wordpress imported categories and tags are imported as private
+when doing a wordpress import, added validation that a folder is selected when the box to download is checked
+
+------------------------------------------------------------------------
+r453 | ninianne98 | 2013-02-24 18:55:12 -0600 (Sun, 24 Feb 2013) | 5 lines
+
+tweak page lifecycle for those using the basenav model
+tweak the CR/LF behavior of the search textbox - better handling of enter being hit when typing a search term
+fixed css issue where a hanging indent was happening in advanced edit
+removed extra methods no longer needed in the database setup page class
+
+------------------------------------------------------------------------
+r452 | ninianne98 | 2013-02-14 18:48:03 -0600 (Thu, 14 Feb 2013) | 4 lines
+
+added content flags ShowInSiteMap and BlockIndex and created a basic page to allow for bulk setting of the index, sitemap, and publish/public flags
+refactored out db update logic so that the series of updates is abstracted out so that external sources only have to call the update and not orchestrate the series of updates.
+removed requirement that debugger be attached - if debug built assemblies, do the stuff and added a datetimestamp to the debug data
+
+------------------------------------------------------------------------
+r451 | ninianne98 | 2013-02-06 21:46:00 -0600 (Wed, 06 Feb 2013) | 8 lines
+
+allow users to import native comments and ward against double imports
+added support to export only a particular subnode hierarchy
+refactored several of the nav classes to use one of a small set of abstract classes to handle common operations between all so that less duplication of code will occour
+moved version key for the logon-ish pages into the master page containiner rather than a one-off basis, updated the CSS to use a sliced image as the wrapper on these pages rather than forcing a particular size using a background image
+added ability to unhide pages that have parent ids that dont exist within the current site (pages who were orphaned by invalid parent IDs due to incomplete data import)
+refactor to have widget wrapper render as an embedded user control and conversion to using embedded user control for content container and widget container
+updated jquery to include v 1.9.1
+
+------------------------------------------------------------------------
+r450 | ninianne98 | 2013-01-31 20:36:07 -0600 (Thu, 31 Jan 2013) | 2 lines
+
+abstracted out the common paging logic between searching/indexing and comments
+
+------------------------------------------------------------------------
+r449 | ninianne98 | 2013-01-31 19:19:50 -0600 (Thu, 31 Jan 2013) | 1 line
+
+changed OrderBy from private to public
+------------------------------------------------------------------------
+r448 | ninianne98 | 2013-01-31 18:43:47 -0600 (Thu, 31 Jan 2013) | 4 lines
+
+added basic opengraph support as a control that can be included optionally rather tha foisted on users
+tweak for the ajax aspect of the spinners, tweak css & ID zone
+update of database project files to match current schema
+
+------------------------------------------------------------------------
+r447 | ninianne98 | 2013-01-28 21:17:41 -0600 (Mon, 28 Jan 2013) | 2 lines
+
+performed some cleanup of the CSS for the adv editor toolbar, added some jquery detection to dynamicly attach rather than forcibly attach
+
+------------------------------------------------------------------------
+r446 | ninianne98 | 2013-01-28 21:15:56 -0600 (Mon, 28 Jan 2013) | 2 lines
+
+update jquery blockUI to v2.53
+
+------------------------------------------------------------------------
+r445 | ninianne98 | 2013-01-28 21:13:35 -0600 (Mon, 28 Jan 2013) | 2 lines
+
+updated css for citrus to include a fancy comment block, also set to use jquerybasic rather than the seperate jquery and jquery ui controls
+
+------------------------------------------------------------------------
+r444 | ninianne98 | 2013-01-28 21:12:07 -0600 (Mon, 28 Jan 2013) | 2 lines
+
+added the jquery 1.9 migrate library, exposed a jquery version property on jquerybasic so any version from 1.6 through 1.9 can be selected
+
+------------------------------------------------------------------------
+r443 | ninianne98 | 2013-01-28 21:10:11 -0600 (Mon, 28 Jan 2013) | 2 lines
+
+added code to show all items if user sets taketop to -1
+
+------------------------------------------------------------------------
+r442 | ninianne98 | 2013-01-21 19:39:34 -0600 (Mon, 21 Jan 2013) | 2 lines
+
+dropped floating toolbar javascript, made collection of the dragged/reordered widgets smarter/more efficient
+removed embedded jquery versions 1.3, 1.4, & 1.5, updated admin components to work with jquery 1.8 and jquery UI 1.10
+------------------------------------------------------------------------
+r441 | ninianne98 | 2013-01-18 00:59:28 -0600 (Fri, 18 Jan 2013) | 2 lines
+
+updated logic behind the database update process
+
+------------------------------------------------------------------------
+r440 | ninianne98 | 2013-01-17 00:21:43 -0600 (Thu, 17 Jan 2013) | 9 lines
+
+updated database create script
+updated sorting of toolbox widgets
+added ability for MostRecentUpdated to take category list
+added ability to move the directory of the plugins or templates by setting a config key in the web.config
+added concept of public/private categories and tags
+tweak appearance of the blog index and page index
+updated css/images themes to jquery ui 1.8.24
+tweaked page behavior for when another user is blocking - don't prompt to navigate away, and provide empty stubs for some of the functions called when redirecting away as some things just don't apply
+
+------------------------------------------------------------------------
+r439 | ninianne98 | 2013-01-15 01:40:44 -0600 (Tue, 15 Jan 2013) | 2 lines
+
+added IE force mode to filebrowser
+
+------------------------------------------------------------------------
+r438 | ninianne98 | 2013-01-15 00:39:49 -0600 (Tue, 15 Jan 2013) | 2 lines
+
+added meta for http-equiv="X-UA-Compatible" content="IE=edge" to better force IE to work in the most optimal mode
+
+------------------------------------------------------------------------
+r437 | ninianne98 | 2013-01-14 21:28:09 -0600 (Mon, 14 Jan 2013) | 2 lines
+
+incorporate jquery ui 1.8.24 and added jquery 1.8.2 to the control collection
+
+------------------------------------------------------------------------
+r436 | ninianne98 | 2013-01-14 21:27:18 -0600 (Mon, 14 Jan 2013) | 2 lines
+
+fix a refactor issue with saving tags/categories (db handling was context incorrect)
+
+------------------------------------------------------------------------
+r435 | ninianne98 | 2013-01-13 23:32:09 -0600 (Sun, 13 Jan 2013) | 2 lines
+
+updated unicode chars for arrows, corrected update script to use a boolean expression to backfill the show in nav field
+
+------------------------------------------------------------------------
+r434 | ninianne98 | 2013-01-13 21:46:28 -0600 (Sun, 13 Jan 2013) | 2 lines
+
+added script 9 to sln folder
+
+------------------------------------------------------------------------
+r433 | ninianne98 | 2013-01-13 21:45:11 -0600 (Sun, 13 Jan 2013) | 11 lines
+
+added ability to hide pages from the site navigation and track the creating user
+extracted filebrowser css into its own file
+updated sitemap to include the show/hide from nav and added support to the adv editor
+tweaked sibling, child, and breadcrumb logic
+added sitemap access to the advanced toolbar
+added thumbnail to adv edit popup, made a smaller/scalable filebrowser, tweaked appearance/css of filebrowser
+changed to use a general purpose serialized clean up
+made sure the page's parent is preserved when publishing from adv editor
+added thumbnail editing to the blog adv edit
+refactored the contentpage to have db contexts within each method rather than a global class-wide one
+
+------------------------------------------------------------------------
+r432 | ninianne98 | 2013-01-09 20:34:50 -0600 (Wed, 09 Jan 2013) | 4 lines
+
+added ability (though an interface IWidgetLimitedProperties) to block all but a subset of the public properties from the widget editor
+tweaked some of the controls to have better visual studio designer behavior/experience
+added custom config area for web.config and created a schema file to aid/assist in filling in the values
+
+------------------------------------------------------------------------
+r431 | ninianne98 | 2013-01-06 22:27:44 -0600 (Sun, 06 Jan 2013) | 11 lines
+
+added auto popuplate of filename and other navigational elements when adding/editing a page
+added intelligent preselect of templates to adding new content - auto select when adding content based on highest usage template of the content type in play (page or post)
+did away with arbitrary sorting of the paged data - always use golive on datasummary
+put in better detection of nullity - is there an index page for the default/plain template
+took out private data context and did seperate ones in each method for SiteData, got postcalendar working as a designer rendered control and added some designer behavior to get rid of some of the control errors when using visual studio to view the templates
+added a cannonoical link control, added a general purpose designer to display some of the more less obvious controls with their info
+put in some more discriminating logic in the webservice error responses
+made some of the controls more consistent with each other and added a type filter to the most recent control
+put in some accomidations so that widgets and/or bodies in user controls can be used consistently/interchangably
+refactor to combine several nav concepts into a single common concept by common naming elements and implementing interfaces
+
+------------------------------------------------------------------------
+r430 | ninianne98 | 2013-01-02 00:41:39 -0600 (Wed, 02 Jan 2013) | 1 line
+
+
+------------------------------------------------------------------------
+r429 | ninianne98 | 2013-01-01 20:53:34 -0600 (Tue, 01 Jan 2013) | 7 lines
+
+changed default listing on blog index to be the "all" mode
+created a combined/combo control to perform pagination logic against a carrotgridview
+added pagination to all blog and all page listing views
+added comment import from wordpress XML exports
+added querystring/link based paginator support (linkbutton failing to postback issues discovered with some HTML 5 templates)
+added a basic indexer into the plaintemplate.aspx file, to be visible/enabled only if the page being viewed is listed as the site index/blog index
+
+------------------------------------------------------------------------
+r428 | ninianne98 | 2012-12-31 00:53:40 -0600 (Mon, 31 Dec 2012) | 6 lines
+
+added some better support for the visual studio experience for the carrotgridview, added some overrides to the searchbox so non-server controls can be used, added some additional styling items to the metawordlist
+added basic sitemap handler, added a better more descriptive title to the module listing so it is easier to tell what module you are in from the title bar
+added some fixes to the widget parser to make sure doubled up tildes (~~) do not appear in control paths.
+added better default handling of when the UTC date is not present in the wordpress backup archive, using "wp:post_date" if "wp:post_date_gmt" bombs
+fixed issue when adding a new tag or category using the UI - better nullity detection
+
+------------------------------------------------------------------------
+r427 | ninianne98 | 2012-12-31 00:48:45 -0600 (Mon, 31 Dec 2012) | 2 lines
+
+added native import and export of a gallery
+
+------------------------------------------------------------------------
+r426 | ninianne98 | 2012-12-28 23:37:24 -0600 (Fri, 28 Dec 2012) | 2 lines
+
+update project / sln
+
+------------------------------------------------------------------------
+r425 | ninianne98 | 2012-12-28 23:26:38 -0600 (Fri, 28 Dec 2012) | 2 lines
+
+updated db project to include latest schema and remove some obselet objects
+
+------------------------------------------------------------------------
+r424 | ninianne98 | 2012-12-28 21:20:34 -0600 (Fri, 28 Dec 2012) | 2 lines
+
+fixes for misbehavior when site is empty or page is empty
+
+------------------------------------------------------------------------
+r423 | ninianne98 | 2012-12-28 19:33:52 -0600 (Fri, 28 Dec 2012) | 2 lines
+
+added script 8 to SLN folder
+
+------------------------------------------------------------------------
+r422 | ninianne98 | 2012-12-28 19:13:40 -0600 (Fri, 28 Dec 2012) | 7 lines
+
+added trackback support, both sending and recieving with sitewide options to turn on or off both
+added more functionalty/filtration for exporting a site - date range, data type, or simply extract everything
+added ability to do a select/unselect all on the bulk template (drill down version)
+centralized some of the controls that are loaded server side into the filename class
+changed a number of object creator methods previously "internal static TypeX" to just be "internal TypeX" so that they are more obviously the primary way to convert from the LINQ object to the buisness entity
+ability to import wordpress attachments along with the content being imported, with the option to attempt to download the files to a designated local website folder
+
+------------------------------------------------------------------------
+r421 | ninianne98 | 2012-12-28 18:19:56 -0600 (Fri, 28 Dec 2012) | 2 lines
+
+broke out some of the line LINQ to SQL into a pseudo buisness library, added support to accept wordpress galleries and attempt to line them up with pages that appear to match the original host pages
+
+------------------------------------------------------------------------
+r420 | ninianne98 | 2012-12-24 01:00:14 -0600 (Mon, 24 Dec 2012) | 3 lines
+
+changed several default template behaviors to use ASCX for the layoutand added dynamic detection of the server controls for the base content page in case someone has removed a content zone
+added more server side centralization of the new management path, laying framwork to allow for someone to move the directory and search replace scripts and then set a config entry for server side support
+
+------------------------------------------------------------------------
+r419 | ninianne98 | 2012-12-22 23:29:58 -0600 (Sat, 22 Dec 2012) | 2 lines
+
+added script 6 back to SLN DB folder
+
+------------------------------------------------------------------------
+r418 | ninianne98 | 2012-12-22 22:32:24 -0600 (Sat, 22 Dec 2012) | 2 lines
+
+renamed /Manage/ to /c3-admin/ - attempt to remove any potential conflict with an actual path a user might want to use
+
+------------------------------------------------------------------------
+r417 | ninianne98 | 2012-12-22 20:37:11 -0600 (Sat, 22 Dec 2012) | 5 lines
+
+added some basic support to allow templates to be run directly for design purposes
+added basic page/post thumbnail support for both listings (like the blog index) and as part of a stand alone page
+enabled ability for certian server controls to find the containing page and get the content page or site data property and use that to set a control's value
+updated templates and template helper controls to use server controls to make it easier to drop in site info without having to resort to the placeholder trick to use <%= %> to access the server side objects
+
+------------------------------------------------------------------------
+r416 | ninianne98 | 2012-12-21 19:00:23 -0600 (Fri, 21 Dec 2012) | 2 lines
+
+dropped some obselete user controls
+
+------------------------------------------------------------------------
+r415 | ninianne98 | 2012-12-21 18:43:38 -0600 (Fri, 21 Dec 2012) | 2 lines
+
+added a countdown to the advanced editor save screen, provided a blog-specific edit UI for the advanced editor, found that cannot just get rid of the various try/catch blocks in the virtual FS class, added some helper functions to make a more straightforward handling of some common routines
+
+------------------------------------------------------------------------
+r414 | ninianne98 | 2012-12-21 01:08:15 -0600 (Fri, 21 Dec 2012) | 2 lines
+
+put back in the try/catch on the attempt to grab the homepage as some errors indiciating upgrade were not being handled gracefully otherwise
+
+------------------------------------------------------------------------
+r413 | ninianne98 | 2012-12-20 23:47:07 -0600 (Thu, 20 Dec 2012) | 2 lines
+
+added auto copy out of the DB updater into the main DB project for synch purposes
+
+------------------------------------------------------------------------
+r412 | ninianne98 | 2012-12-20 23:32:24 -0600 (Thu, 20 Dec 2012) | 4 lines
+
+updates to some stock templates for demonstration purposes, addition of better date go live data - use/store as UTC, backport of dates, allow for timezone of site to be set to allow for date/time to match location of userbase rather than the server farm.
+added some sprocs for some of the agregation and bulk data updates as LINQ just doesn't scale well for the type of updates needing to be done. added some more smarts into the db update detector
+laid in base to support images as part of a page index, creation of a server control to auto draw not yet present
+
+------------------------------------------------------------------------
+r411 | ninianne98 | 2012-12-16 23:29:31 -0600 (Sun, 16 Dec 2012) | 2 lines
+
+updated the default template to use new colors to fit with the new CSS for two level nav, added text and image link support to the rss link control, added some blog data to the abundant template, added the new dates field names to the paged summary control
+
+------------------------------------------------------------------------
+r410 | ninianne98 | 2012-12-16 19:06:37 -0600 (Sun, 16 Dec 2012) | 2 lines
+
+added date-based publishing and SQL to support, improved default CSS behavior for the two level nav control many old attributes are now obselete, but retained for backward compatability, bulk template update by profile type (homepage, blog index, blog post, content page, or everything), incorporated the LinqToSqlExtensions by Terry Aney
+
+------------------------------------------------------------------------
+r409 | ninianne98 | 2012-12-14 08:43:31 -0600 (Fri, 14 Dec 2012) | 2 lines
+
+centralize some one-off css so IE is less grumpy about postbacs in ajax panels, added a multi image column capability to the sortable column type, added simple stylable calendar control for blog date drill downs, added better 404 behavior to image handler
+
+------------------------------------------------------------------------
+r408 | ninianne98 | 2012-12-12 08:23:51 -0600 (Wed, 12 Dec 2012) | 2 lines
+
+added search capability, search control, tweaked drilldown control for admin
+
+------------------------------------------------------------------------
+r407 | ninianne98 | 2012-12-11 01:38:46 -0600 (Tue, 11 Dec 2012) | 2 lines
+
+address default values being missing when the files are too
+
+------------------------------------------------------------------------
+r406 | ninianne98 | 2012-12-10 22:14:23 -0600 (Mon, 10 Dec 2012) | 2 lines
+
+changed some db fields from varchar to nvarchar, adjusted some column sizes that were overkill, added website url field to contact form, enhanced the citrus template appearance, added comment count to the page data, took first stab at providing dual duty controls for viewing sitewide comments and viewing for a particular page only.
+
+------------------------------------------------------------------------
+r405 | ninianne98 | 2012-12-10 09:17:32 -0600 (Mon, 10 Dec 2012) | 2 lines
+
+try/catch to better handle issues when probing an empty database
+
+------------------------------------------------------------------------
+r404 | ninianne98 | 2012-12-09 22:40:05 -0600 (Sun, 09 Dec 2012) | 2 lines
+
+added pagable content comment templatable control, created control to present different pieces of a comment, added plumbing to support specifying which category to show with the paged data summary control, refinined some of the datapaging routines
+
+------------------------------------------------------------------------
+r403 | ninianne98 | 2012-12-08 17:51:03 -0600 (Sat, 08 Dec 2012) | 2 lines
+
+refinement of wordpress import logic
+
+------------------------------------------------------------------------
+r402 | ninianne98 | 2012-12-08 17:10:02 -0600 (Sat, 08 Dec 2012) | 2 lines
+
+MAJOR UPDATE version now 4.3 - includes new tables and views for blogging support, includes site data import export, wordpress post import, various server controls to facilitate contact forms, paged blog indicies, rss feeds, sample templates, database scripts etc
+
+------------------------------------------------------------------------

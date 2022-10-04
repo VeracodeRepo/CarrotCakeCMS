@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50318CB3-849A-4953-90C2-EC2633813AEC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>carrotcake</RootNamespace>
+    <AssemblyName>carrotcake</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Carrotware.CMS.Core, Version=4.4.5907.36833, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.Data, Version=4.4.5907.36832, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.DBUpdater, Version=4.4.5907.36832, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.DBUpdater.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.Interface, Version=4.4.5907.36832, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.UI.Admin, Version=4.4.5907.36834, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.UI.Admin.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.UI.Base, Version=4.4.5907.36834, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.UI.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.UI.Controls, Version=4.4.5907.36833, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.UI.Plugins.EventCalendarModule, Version=1.0.5907.36833, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.UI.Plugins.EventCalendarModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.UI.Plugins.FAQ2Module, Version=1.0.5907.36833, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.UI.Plugins.FAQ2Module.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.CMS.UI.Plugins.PhotoGallery, Version=1.0.5907.36833, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.CMS.UI.Plugins.PhotoGallery.dll</HintPath>
+    </Reference>
+    <Reference Include="Carrotware.Web.UI.Controls, Version=4.4.5907.36832, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Carrotware.Web.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="c3-admin\tiny_mce\plugins\autosave\langs\" />
+    <Folder Include="c3-admin\tiny_mce\plugins\spellchecker\classes\utils\" />
+    <Folder Include="c3-admin\tiny_mce\plugins\spellchecker\includes\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="c3-admin\about.aspx" />
+    <Content Include="c3-admin\BlogPostAddEdit.aspx" />
+    <Content Include="c3-admin\BlogPostEdit.aspx" />
+    <Content Include="c3-admin\BlogPostIndex.aspx" />
+    <Content Include="c3-admin\BlogPostTemplateUpdate.aspx" />
+    <Content Include="c3-admin\CategoryAddEdit.aspx" />
+    <Content Include="c3-admin\CategoryIndex.aspx" />
+    <Content Include="c3-admin\CMS.asmx" />
+    <Content Include="c3-admin\CommentAddEdit.aspx" />
+    <Content Include="c3-admin\CommentAddEditPop.aspx" />
+    <Content Include="c3-admin\CommentIndex.aspx" />
+    <Content Include="c3-admin\CommentIndexPop.aspx" />
+    <Content Include="c3-admin\ContentEdit.aspx" />
+    <Content Include="c3-admin\ContentEditHistory.aspx" />
+    <Content Include="c3-admin\ContentSnippetAddEdit.aspx" />
+    <Content Include="c3-admin\ContentSnippetHistory.aspx" />
+    <Content Include="c3-admin\ContentSnippetIndex.aspx" />
+    <Content Include="c3-admin\ControlPropertiesEdit.aspx" />
+    <Content Include="c3-admin\CreateFirstAdmin.aspx" />
+    <Content Include="c3-admin\DatabaseSetup.aspx" />
+    <Content Include="c3-admin\Default.aspx" />
+    <Content Include="c3-admin\DuplicateWidgetFrom.aspx" />
+    <Content Include="c3-admin\FileBrowser.aspx" />
+    <Content Include="c3-admin\ForgotPassword.aspx" />
+    <Content Include="c3-admin\glossyseagreen\images\animated-overlay.gif" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_flat_15_f9cecd_40x100.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_flat_15_fceaea_40x100.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_flat_25_fbf9ee_40x100.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_flat_70_000000_40x100.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_glass_100_b7d7c4_1x400.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_glass_100_dff6e8_1x400.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_glass_100_f2f5f7_1x400.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_glass_50_468b5e_1x400.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_glass_80_b7d7c4_1x400.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_hexagon_90_eeeeee_12x10.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-bg_highlight-soft_25_fbf9ee_1x100.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_2e83ff_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_468b5e_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_468b5e_256x240.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_525252_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_676f6a_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_b7d7c4_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_cd0a0a_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_dff6e8_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_ffffff_0.png" />
+    <Content Include="c3-admin\glossyseagreen\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="c3-admin\glossyseagreen\jquery-ui-glossyseagreen-scoped.css" />
+    <Content Include="c3-admin\glossyseagreen\jquery-ui-glossyseagreen-scoped2.css" />
+    <Content Include="c3-admin\glossyseagreen\jquery-ui-glossyseagreen.css" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt1%402x.png" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt1.css" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt1.png" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt2%402x.png" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt2.css" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt2.png" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt3%402x.png" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt3.css" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt3.png" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt4%402x.png" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt4.css" />
+    <Content Include="c3-admin\iCheck\customized\grey-alt4.png" />
+    <Content Include="c3-admin\iCheck\customized\_all.css" />
+    <Content Include="c3-admin\iCheck\flat\aero%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\aero.css" />
+    <Content Include="c3-admin\iCheck\flat\aero.png" />
+    <Content Include="c3-admin\iCheck\flat\blue%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\blue.css" />
+    <Content Include="c3-admin\iCheck\flat\blue.png" />
+    <Content Include="c3-admin\iCheck\flat\flat%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\flat.css" />
+    <Content Include="c3-admin\iCheck\flat\flat.png" />
+    <Content Include="c3-admin\iCheck\flat\green%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\green.css" />
+    <Content Include="c3-admin\iCheck\flat\green.png" />
+    <Content Include="c3-admin\iCheck\flat\grey%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\grey.css" />
+    <Content Include="c3-admin\iCheck\flat\grey.png" />
+    <Content Include="c3-admin\iCheck\flat\orange%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\orange.css" />
+    <Content Include="c3-admin\iCheck\flat\orange.png" />
+    <Content Include="c3-admin\iCheck\flat\pink%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\pink.css" />
+    <Content Include="c3-admin\iCheck\flat\pink.png" />
+    <Content Include="c3-admin\iCheck\flat\purple%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\purple.css" />
+    <Content Include="c3-admin\iCheck\flat\purple.png" />
+    <Content Include="c3-admin\iCheck\flat\red%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\red.css" />
+    <Content Include="c3-admin\iCheck\flat\red.png" />
+    <Content Include="c3-admin\iCheck\flat\yellow%402x.png" />
+    <Content Include="c3-admin\iCheck\flat\yellow.css" />
+    <Content Include="c3-admin\iCheck\flat\yellow.png" />
+    <Content Include="c3-admin\iCheck\flat\_all.css" />
+    <Content Include="c3-admin\iCheck\futurico\futurico%402x.png" />
+    <Content Include="c3-admin\iCheck\futurico\futurico.css" />
+    <Content Include="c3-admin\iCheck\futurico\futurico.png" />
+    <Content Include="c3-admin\iCheck\iCheck.css" />
+    <Content Include="c3-admin\iCheck\icheck.min.js" />
+    <Content Include="c3-admin\iCheck\line\aero.css" />
+    <Content Include="c3-admin\iCheck\line\blue.css" />
+    <Content Include="c3-admin\iCheck\line\green.css" />
+    <Content Include="c3-admin\iCheck\line\grey.css" />
+    <Content Include="c3-admin\iCheck\line\line%402x.png" />
+    <Content Include="c3-admin\iCheck\line\line.css" />
+    <Content Include="c3-admin\iCheck\line\line.png" />
+    <Content Include="c3-admin\iCheck\line\orange.css" />
+    <Content Include="c3-admin\iCheck\line\pink.css" />
+    <Content Include="c3-admin\iCheck\line\purple.css" />
+    <Content Include="c3-admin\iCheck\line\red.css" />
+    <Content Include="c3-admin\iCheck\line\yellow.css" />
+    <Content Include="c3-admin\iCheck\line\_all.css" />
+    <Content Include="c3-admin\iCheck\minimal\aero%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\aero.css" />
+    <Content Include="c3-admin\iCheck\minimal\aero.png" />
+    <Content Include="c3-admin\iCheck\minimal\blue%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\blue.css" />
+    <Content Include="c3-admin\iCheck\minimal\blue.png" />
+    <Content Include="c3-admin\iCheck\minimal\green%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\green.css" />
+    <Content Include="c3-admin\iCheck\minimal\green.png" />
+    <Content Include="c3-admin\iCheck\minimal\grey%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\grey.css" />
+    <Content Include="c3-admin\iCheck\minimal\grey.png" />
+    <Content Include="c3-admin\iCheck\minimal\minimal%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\minimal.css" />
+    <Content Include="c3-admin\iCheck\minimal\minimal.png" />
+    <Content Include="c3-admin\iCheck\minimal\orange%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\orange.css" />
+    <Content Include="c3-admin\iCheck\minimal\orange.png" />
+    <Content Include="c3-admin\iCheck\minimal\pink%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\pink.css" />
+    <Content Include="c3-admin\iCheck\minimal\pink.png" />
+    <Content Include="c3-admin\iCheck\minimal\purple%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\purple.css" />
+    <Content Include="c3-admin\iCheck\minimal\purple.png" />
+    <Content Include="c3-admin\iCheck\minimal\red%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\red.css" />
+    <Content Include="c3-admin\iCheck\minimal\red.png" />
+    <Content Include="c3-admin\iCheck\minimal\yellow%402x.png" />
+    <Content Include="c3-admin\iCheck\minimal\yellow.css" />
+    <Content Include="c3-admin\iCheck\minimal\yellow.png" />
+    <Content Include="c3-admin\iCheck\minimal\_all.css" />
+    <Content Include="c3-admin\iCheck\polaris\polaris%402x.png" />
+    <Content Include="c3-admin\iCheck\polaris\polaris.css" />
+    <Content Include="c3-admin\iCheck\polaris\polaris.png" />
+    <Content Include="c3-admin\iCheck\square\aero%402x.png" />
+    <Content Include="c3-admin\iCheck\square\aero.css" />
+    <Content Include="c3-admin\iCheck\square\aero.png" />
+    <Content Include="c3-admin\iCheck\square\blue%402x.png" />
+    <Content Include="c3-admin\iCheck\square\blue.css" />
+    <Content Include="c3-admin\iCheck\square\blue.png" />
+    <Content Include="c3-admin\iCheck\square\green%402x.png" />
+    <Content Include="c3-admin\iCheck\square\green.css" />
+    <Content Include="c3-admin\iCheck\square\green.png" />
+    <Content Include="c3-admin\iCheck\square\grey%402x.png" />
+    <Content Include="c3-admin\iCheck\square\grey.css" />
+    <Content Include="c3-admin\iCheck\square\grey.png" />
+    <Content Include="c3-admin\iCheck\square\orange%402x.png" />
+    <Content Include="c3-admin\iCheck\square\orange.css" />
+    <Content Include="c3-admin\iCheck\square\orange.png" />
+    <Content Include="c3-admin\iCheck\square\pink%402x.png" />
+    <Content Include="c3-admin\iCheck\square\pink.css" />
+    <Content Include="c3-admin\iCheck\square\pink.png" />
+    <Content Include="c3-admin\iCheck\square\purple%402x.png" />
+    <Content Include="c3-admin\iCheck\square\purple.css" />
+    <Content Include="c3-admin\iCheck\square\purple.png" />
+    <Content Include="c3-admin\iCheck\square\red%402x.png" />
+    <Content Include="c3-admin\iCheck\square\red.css" />
+    <Content Include="c3-admin\iCheck\square\red.png" />
+    <Content Include="c3-admin\iCheck\square\square%402x.png" />
+    <Content Include="c3-admin\iCheck\square\square.css" />
+    <Content Include="c3-admin\iCheck\square\square.png" />
+    <Content Include="c3-admin\iCheck\square\yellow%402x.png" />
+    <Content Include="c3-admin\iCheck\square\yellow.css" />
+    <Content Include="c3-admin\iCheck\square\yellow.png" />
+    <Content Include="c3-admin\iCheck\square\_all.css" />
+    <Content Include="c3-admin\Images\accept.png" />
+    <Content Include="c3-admin\Images\add.png" />
+    <Content Include="c3-admin\Images\ani-drip.gif" />
+    <Content Include="c3-admin\Images\ani-flower.gif" />
+    <Content Include="c3-admin\Images\ani-smallbar.gif" />
+    <Content Include="c3-admin\Images\application.png" />
+    <Content Include="c3-admin\Images\application_edit.png" />
+    <Content Include="c3-admin\Images\application_lightning.png" />
+    <Content Include="c3-admin\Images\application_side_expand.png" />
+    <Content Include="c3-admin\Images\application_view_icons.png" />
+    <Content Include="c3-admin\Images\application_view_tile.png" />
+    <Content Include="c3-admin\Images\arrowdown.png" />
+    <Content Include="c3-admin\Images\arrow_in.png" />
+    <Content Include="c3-admin\Images\audio.png" />
+    <Content Include="c3-admin\Images\back.png" />
+    <Content Include="c3-admin\Images\blogger.png" />
+    <Content Include="c3-admin\Images\BlogIndex.png" />
+    <Content Include="c3-admin\Images\book_next.png" />
+    <Content Include="c3-admin\Images\book_previous.png" />
+    <Content Include="c3-admin\Images\brick.png" />
+    <Content Include="c3-admin\Images\bullet_toggle_minus.png" />
+    <Content Include="c3-admin\Images\bullet_toggle_plus.png" />
+    <Content Include="c3-admin\Images\calendar.png" />
+    <Content Include="c3-admin\Images\cancel.png" />
+    <Content Include="c3-admin\Images\carrotcake.png" />
+    <Content Include="c3-admin\Images\carrotpower.png" />
+    <Content Include="c3-admin\Images\carrot_med.png" />
+    <Content Include="c3-admin\Images\carrot_sm.png" />
+    <Content Include="c3-admin\Images\chart_organisation.png" />
+    <Content Include="c3-admin\Images\chosen-sprite%402x.png" />
+    <Content Include="c3-admin\Images\chosen-sprite.png" />
+    <Content Include="c3-admin\Images\clock.png" />
+    <Content Include="c3-admin\Images\clock_add.png" />
+    <Content Include="c3-admin\Images\clock_delete.png" />
+    <Content Include="c3-admin\Images\clock_edit.png" />
+    <Content Include="c3-admin\Images\clock_play.png" />
+    <Content Include="c3-admin\Images\clock_red.png" />
+    <Content Include="c3-admin\Images\clock_stop.png" />
+    <Content Include="c3-admin\Images\cloud-up.png" />
+    <Content Include="c3-admin\Images\cog.png" />
+    <Content Include="c3-admin\Images\cog_edit.png" />
+    <Content Include="c3-admin\Images\cog_go.png" />
+    <Content Include="c3-admin\Images\comment.png" />
+    <Content Include="c3-admin\Images\comments.png" />
+    <Content Include="c3-admin\Images\compress.png" />
+    <Content Include="c3-admin\Images\cross.png" />
+    <Content Include="c3-admin\Images\database.png" />
+    <Content Include="c3-admin\Images\delete.png" />
+    <Content Include="c3-admin\Images\doc.png" />
+    <Content Include="c3-admin\Images\document.png" />
+    <Content Include="c3-admin\Images\dragbg.png" />
+    <Content Include="c3-admin\Images\error.png" />
+    <Content Include="c3-admin\Images\exclamation.png" />
+    <Content Include="c3-admin\Images\ExportData.png" />
+    <Content Include="c3-admin\Images\file_doc.png" />
+    <Content Include="c3-admin\Images\film.png" />
+    <Content Include="c3-admin\Images\flag_blue.png" />
+    <Content Include="c3-admin\Images\flag_green.png" />
+    <Content Include="c3-admin\Images\flag_orange.png" />
+    <Content Include="c3-admin\Images\flag_pink.png" />
+    <Content Include="c3-admin\Images\flag_purple.png" />
+    <Content Include="c3-admin\Images\flag_red.png" />
+    <Content Include="c3-admin\Images\flag_yellow.png" />
+    <Content Include="c3-admin\Images\folder.png" />
+    <Content Include="c3-admin\Images\group.png" />
+    <Content Include="c3-admin\Images\GroupList.png" />
+    <Content Include="c3-admin\Images\heading-gradient.png" />
+    <Content Include="c3-admin\Images\hourglass.png" />
+    <Content Include="c3-admin\Images\house.png" />
+    <Content Include="c3-admin\Images\house_go.png" />
+    <Content Include="c3-admin\Images\html.png" />
+    <Content Include="c3-admin\Images\html2.png" />
+    <Content Include="c3-admin\Images\html_go.png" />
+    <Content Include="c3-admin\Images\image.png" />
+    <Content Include="c3-admin\Images\ImportData.png" />
+    <Content Include="c3-admin\Images\information.png" />
+    <Content Include="c3-admin\Images\LargeDoc.png" />
+    <Content Include="c3-admin\Images\layers.png" />
+    <Content Include="c3-admin\Images\layout.png" />
+    <Content Include="c3-admin\Images\layout_content.png" />
+    <Content Include="c3-admin\Images\layout_edit.png" />
+    <Content Include="c3-admin\Images\lightbulb.png" />
+    <Content Include="c3-admin\Images\lightbulb_off.png" />
+    <Content Include="c3-admin\Images\lock.png" />
+    <Content Include="c3-admin\Images\logonbox-bottomcenter.png" />
+    <Content Include="c3-admin\Images\logonbox-bottomleft.png" />
+    <Content Include="c3-admin\Images\logonbox-bottomright.png" />
+    <Content Include="c3-admin\Images\logonbox-left.png" />
+    <Content Include="c3-admin\Images\logonbox-right.png" />
+    <Content Include="c3-admin\Images\logonbox-topcenter.png" />
+    <Content Include="c3-admin\Images\logonbox-topleft.png" />
+    <Content Include="c3-admin\Images\logonbox-topright.png" />
+    <Content Include="c3-admin\Images\logonbox.gif" />
+    <Content Include="c3-admin\Images\magifier_zoom_out.png" />
+    <Content Include="c3-admin\Images\magnifier.png" />
+    <Content Include="c3-admin\Images\menu-gradient.png" />
+    <Content Include="c3-admin\Images\mini-spinner1-6F997D.gif" />
+    <Content Include="c3-admin\Images\mini-spinner2-6F997D.gif" />
+    <Content Include="c3-admin\Images\mini-spinner3-6F997D.gif" />
+    <Content Include="c3-admin\Images\ModuleAdmin.png" />
+    <Content Include="c3-admin\Images\overlays.png" />
+    <Content Include="c3-admin\Images\package.png" />
+    <Content Include="c3-admin\Images\page.png" />
+    <Content Include="c3-admin\Images\PageIndex.png" />
+    <Content Include="c3-admin\Images\page_add.png" />
+    <Content Include="c3-admin\Images\page_code.png" />
+    <Content Include="c3-admin\Images\page_edit.png" />
+    <Content Include="c3-admin\Images\page_gear.png" />
+    <Content Include="c3-admin\Images\page_paintbrush.png" />
+    <Content Include="c3-admin\Images\page_white.png" />
+    <Content Include="c3-admin\Images\page_white_text.png" />
+    <Content Include="c3-admin\Images\page_white_wrench.png" />
+    <Content Include="c3-admin\Images\page_world.png" />
+    <Content Include="c3-admin\Images\pdf.png" />
+    <Content Include="c3-admin\Images\pencil.png" />
+    <Content Include="c3-admin\Images\plain.png" />
+    <Content Include="c3-admin\Images\plugin.png" />
+    <Content Include="c3-admin\Images\PostCategories.png" />
+    <Content Include="c3-admin\Images\PostTags.png" />
+    <Content Include="c3-admin\Images\Ring-64px-72A584.gif" />
+    <Content Include="c3-admin\Images\Ring-64px-A7B2A0.gif" />
+    <Content Include="c3-admin\Images\script.png" />
+    <Content Include="c3-admin\Images\script_add.png" />
+    <Content Include="c3-admin\Images\script_code.png" />
+    <Content Include="c3-admin\Images\script_code_red.png" />
+    <Content Include="c3-admin\Images\script_edit.png" />
+    <Content Include="c3-admin\Images\shape_move_back.png" />
+    <Content Include="c3-admin\Images\shape_ungroup.png" />
+    <Content Include="c3-admin\Images\shield.png" />
+    <Content Include="c3-admin\Images\SiteData.png" />
+    <Content Include="c3-admin\Images\SiteMap.png" />
+    <Content Include="c3-admin\Images\SiteSkins.png" />
+    <Content Include="c3-admin\Images\Snake-64px-72A584.gif" />
+    <Content Include="c3-admin\Images\Snake-64px-A7B2A0.gif" />
+    <Content Include="c3-admin\Images\spreadsheet.png" />
+    <Content Include="c3-admin\Images\StatusChange.png" />
+    <Content Include="c3-admin\Images\stop.png" />
+    <Content Include="c3-admin\Images\table.png" />
+    <Content Include="c3-admin\Images\TableIndex.png" />
+    <Content Include="c3-admin\Images\table_go.png" />
+    <Content Include="c3-admin\Images\TemplateUpdate.png" />
+    <Content Include="c3-admin\Images\thumb_down.png" />
+    <Content Include="c3-admin\Images\thumb_up.png" />
+    <Content Include="c3-admin\Images\tick.png" />
+    <Content Include="c3-admin\Images\time.png" />
+    <Content Include="c3-admin\Images\time_add.png" />
+    <Content Include="c3-admin\Images\time_delete.png" />
+    <Content Include="c3-admin\Images\ui-anim_basic_16x16.gif" />
+    <Content Include="c3-admin\Images\user.png" />
+    <Content Include="c3-admin\Images\UserList.png" />
+    <Content Include="c3-admin\Images\user_gray.png" />
+    <Content Include="c3-admin\Images\user_green.png" />
+    <Content Include="c3-admin\Images\user_orange.png" />
+    <Content Include="c3-admin\Images\user_red.png" />
+    <Content Include="c3-admin\Images\video.png" />
+    <Content Include="c3-admin\Images\webpage.png" />
+    <Content Include="c3-admin\Images\wordprocessing.png" />
+    <Content Include="c3-admin\Images\x.png" />
+    <Content Include="c3-admin\Images\zoom.png" />
+    <Content Include="c3-admin\Images\zoom_in.png" />
+    <Content Include="c3-admin\Images\zoom_out.png" />
+    <Content Include="c3-admin\Includes\advanced-editor-reset.css" />
+    <Content Include="c3-admin\Includes\advanced-editor.css" />
+    <Content Include="c3-admin\Includes\advanced-editor.js" />
+    <Content Include="c3-admin\Includes\base64.js" />
+    <Content Include="c3-admin\Includes\Blank.htm" />
+    <Content Include="c3-admin\Includes\chosen.jquery.min.js" />
+    <Content Include="c3-admin\Includes\chosen.min.css" />
+    <Content Include="c3-admin\Includes\common-utils.js" />
+    <Content Include="c3-admin\Includes\common.css" />
+    <Content Include="c3-admin\Includes\edit-notifier.css" />
+    <Content Include="c3-admin\Includes\filebrowser.css" />
+    <Content Include="c3-admin\Includes\FindUsers.js" />
+    <Content Include="c3-admin\Includes\icheck.init.js" />
+    <Content Include="c3-admin\Includes\jquery.blockUI.js" />
+    <Content Include="c3-admin\Includes\jquery.form.min.js" />
+    <Content Include="c3-admin\Includes\jquery.simplemodal.js" />
+    <Content Include="c3-admin\Includes\jquery.tooltipster.min.js" />
+    <Content Include="c3-admin\Includes\jquery.ui.nestedSortable.js" />
+    <Content Include="c3-admin\Includes\jquery.ui.timepicker.css" />
+    <Content Include="c3-admin\Includes\jquery.ui.timepicker.js" />
+    <Content Include="c3-admin\Includes\jquery.uploadfile.min.js" />
+    <Content Include="c3-admin\Includes\logon.css" />
+    <Content Include="c3-admin\Includes\main.css" />
+    <Content Include="c3-admin\Includes\mainpopup.css" />
+    <Content Include="c3-admin\Includes\modal.css" />
+    <Content Include="c3-admin\Includes\normalize.css" />
+    <Content Include="c3-admin\Includes\richedit.css" />
+    <Content Include="c3-admin\Includes\TableStyles.css" />
+    <Content Include="c3-admin\Includes\tinymce-config.js" />
+    <Content Include="c3-admin\Includes\tooltipster.css" />
+    <Content Include="c3-admin\Includes\uploadfile.css" />
+    <Content Include="c3-admin\Logon.aspx" />
+    <Content Include="c3-admin\ModuleIndex.aspx" />
+    <Content Include="c3-admin\ModulePopup.aspx" />
+    <Content Include="c3-admin\PageAddChild.aspx" />
+    <Content Include="c3-admin\PageAddEdit.aspx" />
+    <Content Include="c3-admin\PageChildSort.aspx" />
+    <Content Include="c3-admin\PageEdit.aspx" />
+    <Content Include="c3-admin\PageExport.aspx" />
+    <Content Include="c3-admin\PageHistory.aspx" />
+    <Content Include="c3-admin\PageImport.aspx" />
+    <Content Include="c3-admin\PageIndex.aspx" />
+    <Content Include="c3-admin\PageTemplateUpdate.aspx" />
+    <Content Include="c3-admin\PageWidgets.aspx" />
+    <Content Include="c3-admin\PlainTemplate.aspx" />
+    <Content Include="c3-admin\SiteContentStatusChange.aspx" />
+    <Content Include="c3-admin\SiteDetail.aspx" />
+    <Content Include="c3-admin\SiteExport.aspx" />
+    <Content Include="c3-admin\SiteImport.aspx" />
+    <Content Include="c3-admin\SiteIndex.aspx" />
+    <Content Include="c3-admin\SiteInfo.aspx" />
+    <Content Include="c3-admin\SiteMap.aspx" />
+    <Content Include="c3-admin\SiteMapPop.aspx" />
+    <Content Include="c3-admin\SiteSkinEdit.aspx" />
+    <Content Include="c3-admin\SiteSkinIndex.aspx" />
+    <Content Include="c3-admin\SiteTemplateUpdate.aspx" />
+    <Content Include="c3-admin\TagAddEdit.aspx" />
+    <Content Include="c3-admin\TagIndex.aspx" />
+    <Content Include="c3-admin\TextWidgetIndex.aspx" />
+    <Content Include="c3-admin\tiny_mce\classes\adapter\jquery\adapter.js" />
+    <Content Include="c3-admin\tiny_mce\classes\adapter\jquery\jquery.tinymce.js" />
+    <Content Include="c3-admin\tiny_mce\classes\adapter\prototype\adapter.js" />
+    <Content Include="c3-admin\tiny_mce\classes\AddOnManager.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ControlManager.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\DOMUtils.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\Element.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\EventUtils.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\Range.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\RangeUtils.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\ScriptLoader.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\Selection.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\Serializer.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\Sizzle.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\TreeWalker.js" />
+    <Content Include="c3-admin\tiny_mce\classes\dom\TridentSelection.js" />
+    <Content Include="c3-admin\tiny_mce\classes\Editor.Events.js" />
+    <Content Include="c3-admin\tiny_mce\classes\Editor.js" />
+    <Content Include="c3-admin\tiny_mce\classes\EditorCommands.js" />
+    <Content Include="c3-admin\tiny_mce\classes\EditorManager.js" />
+    <Content Include="c3-admin\tiny_mce\classes\EnterKey.js" />
+    <Content Include="c3-admin\tiny_mce\classes\firebug\firebug-lite.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ForceBlocks.js" />
+    <Content Include="c3-admin\tiny_mce\classes\Formatter.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\DomParser.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\Entities.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\Node.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\SaxParser.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\Schema.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\Serializer.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\Styles.js" />
+    <Content Include="c3-admin\tiny_mce\classes\html\Writer.js" />
+    <Content Include="c3-admin\tiny_mce\classes\LegacyInput.js" />
+    <Content Include="c3-admin\tiny_mce\classes\Popup.js" />
+    <Content Include="c3-admin\tiny_mce\classes\tinymce.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\Button.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\ColorSplitButton.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\Container.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\Control.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\DropMenu.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\KeyboardNavigation.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\ListBox.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\Menu.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\MenuButton.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\MenuItem.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\NativeListBox.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\Separator.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\SplitButton.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\Toolbar.js" />
+    <Content Include="c3-admin\tiny_mce\classes\ui\ToolbarGroup.js" />
+    <Content Include="c3-admin\tiny_mce\classes\UndoManager.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\Cookie.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\Dispatcher.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\JSON.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\JSONP.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\JSONRequest.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\Quirks.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\URI.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\VK.js" />
+    <Content Include="c3-admin\tiny_mce\classes\util\XHR.js" />
+    <Content Include="c3-admin\tiny_mce\classes\WindowManager.js" />
+    <Content Include="c3-admin\tiny_mce\File.gif" />
+    <Content Include="c3-admin\tiny_mce\fileUp.gif" />
+    <Content Include="c3-admin\tiny_mce\Folder.gif" />
+    <Content Include="c3-admin\tiny_mce\FolderOpened.gif" />
+    <Content Include="c3-admin\tiny_mce\FolderUp.gif" />
+    <Content Include="c3-admin\tiny_mce\insertfile.gif" />
+    <Content Include="c3-admin\tiny_mce\jquery.tinymce.js" />
+    <Content Include="c3-admin\tiny_mce\langs\en.js" />
+    <Content Include="c3-admin\tiny_mce\license.txt" />
+    <Content Include="c3-admin\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\autolink\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\example_dependency\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\insertpreformattedtext\dialog.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\insertpreformattedtext\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\insertpreformattedtext\img\insertpreformattedtext.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\insertpreformattedtext\js\dialog.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\insertpreformattedtext\langs\en.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\insertpreformattedtext\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\lists\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\media\media.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\media\moxieplayer.swf" />
+    <Content Include="c3-admin\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\preview\example.html" />
+    <Content Include="c3-admin\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="c3-admin\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="c3-admin\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\style\props.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\style\readme.txt" />
+    <Content Include="c3-admin\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\row.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\table\table.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\template\template.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\visualblocks\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="c3-admin\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\flash.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\iframe.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\pagebreak.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\quicktime.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\realmedia.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\shockwave.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\trans.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\video.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\img\windowsmedia.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\shortcuts.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\highcontrast\content.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\highcontrast\dialog.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\highcontrast\ui.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="c3-admin\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="c3-admin\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="c3-admin\tiny_mce\tiny_mce.js" />
+    <Content Include="c3-admin\tiny_mce\tiny_mce_jquery.js" />
+    <Content Include="c3-admin\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="c3-admin\tiny_mce\tiny_mce_prototype.js" />
+    <Content Include="c3-admin\tiny_mce\utils\editable_selects.js" />
+    <Content Include="c3-admin\tiny_mce\utils\form_utils.js" />
+    <Content Include="c3-admin\tiny_mce\utils\mctabs.js" />
+    <Content Include="c3-admin\tiny_mce\utils\validate.js" />
+    <Content Include="c3-admin\ucAdminModule.ascx" />
+    <Content Include="c3-admin\ucAdvancedEdit.ascx" />
+    <Content Include="c3-admin\ucBlogMenuItems.ascx" />
+    <Content Include="c3-admin\ucCommentAddEdit.ascx" />
+    <Content Include="c3-admin\ucCommentIndex.ascx" />
+    <Content Include="c3-admin\ucEditDateTime.ascx" />
+    <Content Include="c3-admin\ucEditNotifier.ascx" />
+    <Content Include="c3-admin\ucGenericContent.ascx" />
+    <Content Include="c3-admin\ucPageMenuItems.ascx" />
+    <Content Include="c3-admin\ucSiteMap.ascx" />
+    <Content Include="c3-admin\ucSitePageDrillDown.ascx" />
+    <Content Include="c3-admin\ucTextContent.ascx" />
+    <Content Include="c3-admin\User.aspx" />
+    <Content Include="c3-admin\UserAdd.aspx" />
+    <Content Include="c3-admin\UserGroupAddEdit.aspx" />
+    <Content Include="c3-admin\UserGroups.aspx" />
+    <Content Include="c3-admin\UserMembership.aspx" />
+    <Content Include="c3-admin\UserPassword.aspx" />
+    <Content Include="c3-admin\UserProfile.aspx" />
+    <Content Include="c3-admin\WidgetHistory.aspx" />
+    <Content Include="c3-admin\WidgetList.aspx" />
+    <Content Include="c3-admin\WidgetTime.aspx" />
+    <Content Include="c3-admin\wp-SiteImport.aspx" />
+    <Content Include="cmsTemplates\Imagination\css\font\fontawesome-webfont.svg" />
+    <Content Include="cmsTemplates\Imagination\css\images\divider1-bg.png" />
+    <Content Include="cmsTemplates\Imagination\css\images\featured-wrapper-bg.jpg" />
+    <Content Include="cmsTemplates\Imagination\css\images\footer-content-wrapper-bg.jpg" />
+    <Content Include="cmsTemplates\Imagination\css\images\header-wrapper-bg.jpg" />
+    <Content Include="cmsTemplates\Imagination\css\images\link-style1-divider.png" />
+    <Content Include="cmsTemplates\Imagination\css\images\main-wrapper-bg.jpg" />
+    <Content Include="cmsTemplates\Imagination\css\images\mobileUI-site-nav-opener-bg.svg" />
+    <Content Include="cmsTemplates\Imagination\css\images\toggle.svg" />
+    <Content Include="cmsTemplates\Imagination\css\skel-noscript.css" />
+    <Content Include="cmsTemplates\Imagination\css\style-1000px.css" />
+    <Content Include="cmsTemplates\Imagination\css\style-desktop.css" />
+    <Content Include="cmsTemplates\Imagination\css\style-mobile.css" />
+    <Content Include="cmsTemplates\Imagination\css\style.css" />
+    <Content Include="cmsTemplates\Imagination\home.aspx" />
+    <Content Include="cmsTemplates\Imagination\images\banner.jpg" />
+    <Content Include="cmsTemplates\Imagination\images\placeholder.png" />
+    <Content Include="cmsTemplates\Imagination\js\html5shiv.js" />
+    <Content Include="cmsTemplates\Imagination\js\init.js" />
+    <Content Include="cmsTemplates\Imagination\js\jquery.dropotron.min.js" />
+    <Content Include="cmsTemplates\Imagination\js\skel-panels.min.js" />
+    <Content Include="cmsTemplates\Imagination\js\skel.min.js" />
+    <Content Include="cmsTemplates\Imagination\left-sidebar.aspx" />
+    <Content Include="cmsTemplates\Imagination\listing.aspx" />
+    <Content Include="cmsTemplates\Imagination\no-sidebar.aspx" />
+    <Content Include="cmsTemplates\Imagination\post.aspx" />
+    <Content Include="cmsTemplates\Imagination\right-sidebar.aspx" />
+    <Content Include="cmsTemplates\waterdrops\images\img01.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img02.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img02b.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img03.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img03b.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img04.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img04.png" />
+    <Content Include="cmsTemplates\waterdrops\images\img05.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img06.jpg" />
+    <Content Include="cmsTemplates\waterdrops\images\img07.jpg" />
+    <Content Include="cmsTemplates\waterdrops\style.css" />
+    <Content Include="cmsTemplates\waterdrops\waterdrops-blog-index.aspx" />
+    <Content Include="cmsTemplates\waterdrops\waterdrops-blog.aspx" />
+    <Content Include="cmsTemplates\waterdrops\waterdrops-home.aspx" />
+    <Content Include="cmsTemplates\waterdrops\waterdrops-page.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="c3-admin\FileUp.ashx" />
+    <Content Include="AdminModules.config" />
+    <None Include="c3-admin\Includes\C3TemplateSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="c3-admin\Includes\C3WebConfigSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="c3-admin\Includes\C3WidgetAdminSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="c3-admin\Includes\C3WidgetPublicSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="c3-admin\MasterPages\Main.Master" />
+    <Content Include="c3-admin\MasterPages\MainPopup.Master" />
+    <Content Include="c3-admin\MasterPages\Public.Master" />
+    <None Include="c3-admin\tiny_mce\classes\firebug\FIREBUG.LICENSE" />
+    <Content Include="c3-admin\web.config" />
+    <Content Include="PublicControls.config" />
+    <Content Include="SiteMapping.config" />
+    <Content Include="SiteSkins.config" />
+    <Content Include="TextContentProcessors.config" />
+    <Content Include="Web.config" />
+    <None Include="cmsTemplates\Imagination\css\font\fontawesome-webfont.eot" />
+    <None Include="cmsTemplates\Imagination\css\font\fontawesome-webfont.ttf" />
+    <None Include="cmsTemplates\Imagination\css\font\fontawesome-webfont.woff" />
+    <None Include="cmsTemplates\Imagination\css\font\FontAwesome.otf" />
+    <Content Include="cmsTemplates\Imagination\imagination.master" />
+    <Content Include="cmsTemplates\Imagination\Skin.config" />
+    <Content Include="cmsTemplates\waterdrops\Skin.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1608</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

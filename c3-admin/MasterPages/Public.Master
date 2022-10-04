@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="Carrotware.CMS.UI.Admin.c3_admin.MasterPages.Public" %>
+
+<%@ Import Namespace="Carrotware.CMS.Core" %>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head id="Head1" runat="server">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<link href="/c3-admin/includes/normalize.css" rel="stylesheet" type="text/css" />
+	<title>Public</title>
+	<carrot:jquerybasic runat="server" ID="jquerybasic1" UseJqueryMigrate="true" SelectedSkin="LightGreen" />
+	<link href="/c3-admin/iCheck/iCheck.css" rel="stylesheet" type="text/css" />
+	<script src="/c3-admin/iCheck/icheck.min.js" type="text/javascript"></script>
+	<script src="/c3-admin/includes/icheck.init.js" type="text/javascript"></script>
+	<link href="/c3-admin/includes/logon.css" rel="stylesheet" type="text/css" />
+	<link href="/c3-admin/includes/common.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("input:button, input:submit, input:reset, button").button();
+		});
+
+		function ShowAbout() {
+			var w = $(window).width() * 0.75;
+			var h = $(window).height() * 0.75;
+
+			var t = '<iframe frameborder="0" style="overflow: hidden; margin: 4px; padding: 0; height: 98%; width: 100%;" src="<%= SiteFilename.AboutURL %>"></iframe>';
+
+			cmsAlertModalHeightWidth(t, h, w);
+		}
+
+		function cmsAlertModalClose() {
+			$("#divCMSModal").dialog("close");
+		}
+
+		function cmsAlertModalHeightWidth(request, h, w) {
+			$("#divCMSModalMsg").html('');
+
+			$("#divCMSModalMsg").html(request);
+
+			$("#divCMSModal").dialog({
+				height: h,
+				width: w,
+				modal: true,
+				buttons: {
+					"OK": function () {
+						cmsAlertModalClose();
+					}
+				}
+			});
+		}
+	</script>
+	<meta name="robots" content="noindex,nofollow,noarchive" runat="server" id="metaCrawl" />
+	<asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="aspnetForm" runat="server">
+	<div class="wrappedcontent">
+		<div class="box-top-center">
+			<div class="box-top-left">
+			</div>
+			<div class="box-top-right">
+			</div>
+		</div>
+		<div class="box-inner">
+			<div class="box-right">
+				<div class="box-left">
+					<div class="wrappedcontent-inner">
+						<asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+						</asp:ContentPlaceHolder>
+					</div>
+					<div class="box-buildversion">
+						<p>
+							&nbsp;
+						</p>
+						<p>
+							<asp:Literal ID="litCMSBuildInfo" runat="server" />
+							<a href="javascript:ShowAbout()">
+								<img class="imgNoBorder" src="/c3-admin/Images/information.png" alt="information" title="information" /></a>
+						</p>
+						<p>
+							Database Status <a href="<%= SiteFilename.DatabaseSetupURL %>">
+								<img class="imgNoBorder" src="/c3-admin/Images/database.png" alt="database" title="database" /></a>
+							<asp:PlaceHolder ID="phLogin" runat="server">&nbsp;&nbsp;&nbsp; Login <a href="<%= SiteFilename.LogonURL %>">
+								<img class="imgNoBorder" src="/c3-admin/Images/user.png" alt="login" title="login" /></a> </asp:PlaceHolder>
+						</p>
+					</div>
+					<div class="box-carrot">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;">
+		</div>
+		<div class="box-bottom-center">
+			<div class="box-bottom-left">
+			</div>
+			<div class="box-bottom-right">
+			</div>
+		</div>
+	</div>
+	<div style="display: none">
+		<div id="divCMSModal" title="CarrotCake CMS">
+			<div id="divCMSModalMsg" style="overflow: hidden; margin: 0; padding: 2px; height: 100%; width: 100%;">
+				&nbsp;
+			</div>
+		</div>
+		<asp:Button ID="cmdDummy" runat="server"></asp:Button>
+	</div>
+	<asp:PlaceHolder ID="plcFooter" runat="server" />
+	</form>
+</body>
+</html>
