@@ -1,4 +1,4 @@
-# CarrotCakeCMS1111
+# CarrotCakeCMS1
  CarrotCake CMS is a template-based ASP.Net 3.5 WebForms CMS (content management system) built with C#, SQL server, jQueryUI, and TinyMCE. This content management system supports multi-tenant webroots with shared databases and works well in medium trust.
 
 Some features include: blogging engine, configurable date based blog post URLs, blog post content association with categories and tags, assignment/customization of category and tag URL patterns, simple content feedback collection and review, blog post pagination/indexes (with templating support), import and export of site content, and import of content from WordPress XML export files.
